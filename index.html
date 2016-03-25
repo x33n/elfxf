@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html  ng-app="cloverApp">
+<head>
+    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36164030 = new Ya.Metrika({id:36164030, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true, ut:"noindex"}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/36164030?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+	<script src="/js/app.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Дома из клееного бруса по индивидуальному проекту | компания "Клевер уДачи"</title>
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500|Roboto+Condensed:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<link href="slick/slick.css" rel="stylesheet" type="text/css" />
+	<link href="slick/slick-theme.css" rel="stylesheet" type="text/css" />
+	<link href="/feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css" />
+	<link href="/feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css" />
+
+
+
+	<!--<link rel="stylesheet" type="text/css" href="/css/reset.css">-->
+
+	<!-- load css for cubeportfolio -->
+	<link rel="stylesheet" type="text/css" href="/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
+
+	<!-- load main css for this page -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class='container-fluid parallax' id="bgMain" data-type="background" data-speed="100">
+	<nav class="navbar navbar-default container-fluid " role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Меню</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" style="  margin-right: 70px;">
+				    <img src="/images/clover-logo.png" style="width: 150px;padding-top: 20px; opacity: 0.8"/></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav" style="opacity: 0.9; padding-top: 40px;" >
+					<li><a href="#projects">наши проекты</a></li>
+					<li><a href="#tech">материалы и технологии</a></li>
+					<li><a href="#comm">этапы работы</a></li>
+					<!--li><a href="#about">о нас</a></li-->
+					<li><a href="#contacts">контакты</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a id="backCallForm">(915)010-4940</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<div class="container" id="main_capt">
+		<div><h2  style="">Элитные дома из клееного бруса</h2></div>
+		<div class="text-center hdivider" style="    margin: 23px auto 20px auto;"></div>
+		<h3>индивидуальный проект дома вашей мечты<br>и строительство под ключ</h3>
+		<!-- <div ><h4  style="margin:auto">Мы проектируем и строим дома премиум-класса<br>
+        Лучшие природные материалы в комбинации с современными технологиями <br>капитального строительства, гарантируют комфорт и долговечность наших домов.</h4></div>-->
+		<div style="height: 40px"></div>
+		<a type="button" class="btn btn-ord btn-lg" href="#projects">
+			Рассчитайте свой проект
+		</a>
+
+		<!-- <button type="button" class="btn btn-ord">Свой проект</button> -->
+		<!--<button type="button" class="btn btn-trans"  id="questionForm" >Задать вопрос-->
+			<!--<span class="glyphicon glyphicon-earphone" aria-hidden="true" style="margin-left: 10px"></span>-->
+		<!--</button>-->
+	</div>
+</div>
+3
+
+<section id="feats">
+	<div class="container" id="features">
+		<h1 class="text-center hs1">Дом, в котором хочется жить!</h1>
+		<div class="text-center hdivider"></div>
+		<p class="text-center ps">Мы одни из первых оценили превосходные качества клееного бруса, и наладили собственное производство.<br>
+			За 8 лет мы успели построить больше 100 домов и отработали технологии до совершенства.<br>
+			</p>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 featItem">
+			<div class="featdec">
+				<img src="images/ico_engineer1.png" height="87" width="87"  style="margin-top: 10px">
+			</div>
+			<div class="featvl"></div>
+			<div class="featvc"></div>
+			<h4>Персональный архитектор</h4>
+			<div class="feathg"></div>
+			<p>Наш инженер-проектировщик бесплатно создаст 3d-модель будущего дома по вашим эскизам с учетом всех пожеланий.</p>
+			<a href=""><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 featItem">
+			<div class="featdec">
+				<img src="images/ico_docs.png" height="67" width="67"  style="margin-top: 15px">
+			</div>
+			<div class="featvl"></div>
+			<div class="featvc"></div>
+			<h4>Подготовка документации</h4>
+			<div class="feathg"></div>
+			<p>Если вам понадобится помощь с изыскательными работами и прочими согласованиями, мы предоставим своих специалистов</p>
+			<a href=""><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 featItem">
+			<div class="featdec">
+				<img src="images/ico_control.png" height="77" width="77"  style="margin-top: 10px; padding-left: 7px">
+			</div>
+			<div class="featvl"></div>
+			<div class="featvc"></div>
+			<h4>Контроль качества</h4>
+			<div class="feathg"></div>
+			<p>Строительство осуществляется в цехе на профессиональном оборудовании. На участок ваш дом приедет готовый к сборке.</p>
+			<a href=""><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 featItem">
+			<div class="featdec">
+				<img src="images/ico_key.png" height="77" width="77"  style="margin-top: 10px">
+			</div>
+			<div class="featvl"></div>
+			<div class="featvc"></div>
+			<h4>Под ключ!</h4>
+			<div class="feathg"></div>
+			<p>Мы заложим фундамент, оптимально подходящий под ваш грунт, спроектируем интерьер, и подведем все коммуникации.</p>
+			<a href=""><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a>
+		</div>
+	</div>
+</section>
+
+
+<section id="projects">
+	<div class="container">
+		<h1 class="text-center hs1">наши проекты</h1>
+		<div class="text-center hdivider"></div>
+		<p class="text-center ps">Каждый проект дома из клееного бруса выполнен с учетом всех требований и норм.<br> При необходимости мы можем "настроить" любой типовой проект под ваши пожелания.</p>
+	</div>
+
+
+
+
+	<div class="wrapper">
+
+		<!--<div id="filters-container" class="cbp-l-filters-dropdown">-->
+			<!--<div class="cbp-l-filters-dropdownWrap">-->
+				<!--<div class="cbp-l-filters-dropdownHeader">Сортировать</div>-->
+				<!--<div class="cbp-l-filters-dropdownList">-->
+					<!--<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">-->
+						<!--Все (<div class="cbp-filter-counter"></div> проектов)-->
+					<!--</div>-->
+					<!--<div data-filter=".print" class="cbp-filter-item">-->
+						<!--Одноэтажные (<div class="cbp-filter-counter"></div> проектов)-->
+					<!--</div>-->
+					<!--<div data-filter=".web-design" class="cbp-filter-item">-->
+						<!--Двухэтажные (<div class="cbp-filter-counter"></div> проектов)-->
+					<!--</div>-->
+					<!--<div data-filter=".motion" class="cbp-filter-item">-->
+						<!--Бани (<div class="cbp-filter-counter"></div> проектов)-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+
+		<div id="grid-container" class="cbp-l-grid-gallery">
+			<ul>
+			    <li class="cbp-item print motion">
+					<a href="ajax/project1.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="World Clock Widget<br>by Paul Flavius Nechita">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/0/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом "Озёрный"</div>
+									<div class="cbp-l-caption-desc">Проект по технологии Фахверк</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item print motion">
+					<a href="ajax/project2.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="World Clock Widget<br>by Paul Flavius Nechita">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/1/ptproject.png" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом "Темза"</div>
+									<div class="cbp-l-caption-desc">Проект по технологии Фахверк</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item print motion">
+					<a href="ajax/project3.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="World Clock Widget<br>by Paul Flavius Nechita">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/2/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом "Полёт"</div>
+									<div class="cbp-l-caption-desc">Проект по технологии Фахверк</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item print motion">
+					<a href="ajax/project1.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="World Clock Widget<br>by Paul Flavius Nechita">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/3/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item web-design">
+					<a href="ajax/project2.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="Bolt UI<br>by Tiberiu Neamu">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/4/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item print motion">
+					<a href="ajax/project3.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="WhereTO App<br>by Tiberiu Neamu">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/5/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item web-design print">
+					<a href="ajax/project4.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="iDevices<br>by Tiberiu Neamu">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/6/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item motion">
+					<a href="ajax/project5.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/7/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item print motion">
+					<a href="ajax/project6.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="Remind~Me Widget<br>by Tiberiu Neamu">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/8/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item web-design print">
+					<a href="ajax/project7.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="Workout Buddy<br>by Tiberiu Neamu">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/9/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item print">
+					<a href="ajax/project8.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="Digital Menu<br>by Cosmin Capitanu">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/10/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cbp-item motion">
+					<a href="ajax/project9.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="Holiday Selector<br>by Cosmin Capitanu">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/11/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом ""</div>
+									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="cbp-l-loadMore-button">
+			<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">ЕЩЁ БОЛЬШЕ ПРОЕКТОВ</a>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+	<!--div  ng-controller="ProjectsController">
+        <div class="projects">
+            <div ng-repeat="project in projects"  class="project">
+                <figure class="peff">
+                    <img ng-src="{{project.image}}" class="img-responsive">
+                    <figcaption>
+                    <h2>{{project.name}}</h2>
+
+                    <div class="details">
+                        <a href="#pjdetails{{project.id}}" >Описание</a>
+                    </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div-->
+
+</section>
+
+<section id="par_iwant" data-type="background" data-speed="2" >
+	<div style="position: absolute; width: 100%; height: inherit; background-color: rgba(100, 100, 100, 0.7);"></div>
+
+<div class="container">
+	<div class="row text-center">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div id="wantico_wrap">
+				<div class="wantdec">
+					<img src="images/ico_wantown.png">
+				</div>
+				<div class="wantvl"></div>
+				<div class="wantvc"></div>
+			</div>
+
+
+			<!--<h4>Подготовка документации</h4>-->
+			<!--<div class="feathg"></div>-->
+			<!--<p>Если вам понадобится помощь с изыскательными работами и прочими согласованиями, мы предоставим своих специалистов</p>-->
+			<!--<a href=""><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a>-->
+		</div>
+		<div class="col-md-12 col-sm-12 text-center">
+			<h3>
+				Индивидуальный проект вашего дома
+			</h3>
+			<div class="text-center hdivider" style="margin-bottom: 18px"></div>
+			<p>
+				Мы спроектируем его построим его под вашим руководством
+			</p>
+
+			<div style="margin: 50px 0px;">
+
+				<a class="btn-ownord">Хочу свой дом</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+</section>
+
+
+
+
+
+
+<section id="big_one" class="container">
+	<h1 class="text-center hs1">Материалы и технологии</h1>
+	<div class="text-center hdivider" style="margin-bottom: 20px;"></div>
+	<p class="text-center ps">Из всех видов экологичных материалов мы выбрали кленый брус,<br>как не имеющий аналогов среди себе подобных. В сочетании с технологиями обработки и сборки<br> в стенах наших домов прохладно летом, и тепло зимой. Нам нравится строить дома, в которых хочется жить!</p>
+	<div class="row">
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"  style="padding-top: 20px;">
+			<div class="row">
+				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+					<p class="mathdr text-right">долговечный</p>
+					<p class="mattxt  text-right">Конструкции из клееного бруса
+						не уступают по долговечности кирпичным домам </p>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+					<img src="images/checked-box.png" height="50">
+				</div>
+				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+					<p class="mathdr text-right">идеально ровный</p>
+					<p class="mattxt text-right">Независимо от климатических условий и времени конструкция из клееного бруса будет держать заданную форму.  </p>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+					<img src="images/checked-box.png" height="50" width="50">
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+			<img src="images/srez.jpg" class="img-responsive">
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"  style="padding-top: 20px;">
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+					<img src="images/checked-box.png" height="50">
+				</div>
+				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+					<p class="mathdr text-left">ЭКОЛОГИЧНЫЙ</p>
+					<p class="mattxt  text-left">Сложно передать ощущение уюта и свежести деревянного дома. Вы это почувствуете.
+					</p>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+					<img src="images/checked-box.png" height="50">
+				</div>
+				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+					<p class="mathdr text-left">прочный</p>
+					<p class="mattxt  text-left">Использование клееного бруса трижды превосходит по прочности обычный брус и оцилиндрованное бревно </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="services">
+
+	<div class="container">
+
+		<h1 class="text-center hs1">СТРОИМ ПОД КЛЮЧ</h1>
+		<div class="text-center hdivider" style="margin-bottom: 20px;"></div>
+		<p class="description align-center">Мы одни из первых оценили превосходные качества клееного бруса, и наладили собственное производство. За 8 лет мы успели построить больше 100 домов и отработали технологии до совершенства. Компания "Клевер уДачи" - дома, в которых хочется жить!</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<a href="#" title="">
+					<img style="display: block;" src="/images/img-serv-arch.jpg" alt="">
+				</a>
+				<h4><a href="#" title="">Проектирование и подготовка документации</a></h4>
+				<div class="servithg"></div>
+				<p>Независимо от климатических условий и времени конструкция из клееного бруса будет держать заданную форму</p>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<a href="#" title="">
+					<img style="display: block;" src="/images/img-serv-prep.jpg" alt="">
+				</a>
+				<h4><a href="#" title="">Подготовка строительной площадки</a></h4>
+				<div class="servithg"></div>
+				<p>Независимо от климатических условий и времени конструкция из клееного бруса будет держать заданную форму</p>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<a href="#" title="">
+					<img style="display: block;" src="/images/image_03_001.jpg" alt="">
+				</a>
+				<h4><a href="" title="">Строительство и отделка</a></h4>
+				<div class="servithg"></div>
+				<p>Независимо от климатических условий и времени конструкция из клееного бруса будет держать заданную форму</p>
+			</div>
+		</div>
+		<div class="text-center">
+			<a class="btn-allserv" href="/" title="">Полный список работ</a>
+		</div>
+
+	</div>
+
+
+	</div>
+
+</section>
+
+<section style="height: 500px;width: 100%"> </section>
+
+<section id="greenContacts">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6-col-sm-offset-6 col-md-4 col-lg-4">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="/images/footpics_phone.png" alt="" class="footpic img-circle"/>
+					</div>
+					<div class="col-md-8">
+						<p>Тел:<br>+7 926 448 4567</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-xs-12 col-sm-6-col-sm-offset-6 col-md-4 col-lg-4">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="/images/footpics_addr.png" alt="" class="footpic img-circle"/>
+					</div>
+					<div class="col-md-8">
+						<p>141021, Мытищи<br>ул. Юбилейная д.38 корп.3</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6-col-sm-offset-6 col-md-4 col-lg-4">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="/images/footpics_mail.png" alt="" class="footpic img-circle"/>
+					</div>
+					<div class="col-md-8">
+						<p>E-mail:<br>
+							<a href="mailto:dom@kleverudachi.ru">dom@kleverudachi.ru</a></p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+<section id="footerwrap" style="background: #F5F5F5; ">
+	<div class="container">
+
+		<div class="row" style="padding-top: 30px; padding-bottom: 30px">
+
+			<div class="col-xs-12 col-sm-6-col-sm-offset-6 col-md-3 col-lg-3">
+				<h6 class="box-header">О Нас</h6>
+				<p>Мы одни из первых оценили превосходные качества клееного бруса, и наладили собственное производство.
+					За 8 лет мы успели построить больше 100 домов и отработали технологии до совершенства.
+					Компания "Клевер уДачи" - дома, в которых хочется жить!</p>
+				<img src="/images/social.png" alt="" />	<!--ul class="social-icons yellow margin-top-26">
+			<li><a target="_blank" href="" class="social-facebook"></a></li>
+			<li><a target="_blank" href="" class="social-twitter"></a></li>
+			<li><a target="_blank" href="" class="social-linkedin"></a></li>
+			<li><a target="_blank" href="" class="social-pinterest"></a></li>
+		</ul-->
+			</div>
+
+			<div class="col-xs-12 col-sm-6-col-sm-offset-6 col-md-3 col-lg-3">
+				<h6 class="box-header">Наши услуги</h6>		<ul class="list margin-top-20">
+				<li class="template-bullet">Проектирование</li>
+				<li class="template-bullet">Подготовка документации</li>
+				<li class="template-bullet">Подготовка площадки</li>
+				<li class="template-bullet">Строительство</li>
+				<li class="template-bullet">Подведение коммуникаций</li>
+				<li class="template-bullet">Дизайн интерьера</li>
+				<li class="template-bullet">Ландшафтный дизайн</li>
+				<li class="template-bullet">Отделочные работы</li>
+				<li class="template-bullet">Монтаж оборудования</li>
+			</ul>
+			</div>
+
+			<div class="col-xs-12 col-sm-6-col-sm-offset-6 col-md-3 col-lg-3">
+				<h6 class="box-header">Технологии</h6><ul>
+				<li class="cat-item cat-item-6"><a href="">Виртуальная 3D-модель</a>
+				</li>
+				<li class="cat-item cat-item-8"><a href="">Собственное сырьё</a>
+				</li>
+				<li class="cat-item cat-item-9"><a href="">Цеховая подготовка</a>
+				</li>
+				<li class="cat-item cat-item-10"><a href="">Методика сборки</a>
+				</li>
+				<li class="cat-item cat-item-11"><a href="">Непрерывный контроль</a>
+				</li>
+				<li class="cat-item cat-item-12"><a href="">Послестроительный контроль</a>
+				</li>
+				<li class="cat-item cat-item-13"><a href="">Системы безопасности</a>
+				</li>
+
+			</ul>
+			</div>
+
+			<div class="col-xs-12 col-sm-6-col-sm-offset-6 col-md-3 col-lg-3">
+				<h6 class="box-header">Последние новости</h6><ul class="blog small margin-top-30"><li class="post">
+				<a href="" title="What a Difference a Few Months Make" class="post-image">
+					<img width="90" height="90" src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/image_10-90x90.jpg" class="attachment-tiny-thumb wp-post-image" alt="OUR PROJECTS" title=""></a>
+				<div class="post-content">
+					<a href="" title="What a Difference a Few Months Make">Итоги выставки «Holzhaus». Самые часто задаваемые вопросы о фахверке.</a>
+					<ul class="post-details">
+						<li class="date">17.03.2016</li>
+					</ul>
+				</div>
+			</li><li class="post">
+				<a href="" title="What a Difference a Few Months Make" class="post-image">
+					<img width="90" height="90" src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/image_06-90x90.jpg" class="attachment-tiny-thumb wp-post-image" alt="OUR PROJECTS" title=""></a>
+				<div class="post-content">
+					<a href="" title="What a Difference a Few Months Make">Результаты работ по монтажу автономной энергосистемы</a>
+					<ul class="post-details">
+						<li class="date">10.01.2016</li>
+					</ul>
+				</div>
+			</li></ul>
+			</div>
+
+
+		</div>
+
+	</div>
+</section>
+
+<section class="container" >
+	<div class="row">
+		<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center" style="padding-top: 30px; padding-bottom: 30px">
+			<span class="copyright" >
+  			© Клевер уДачи. Все права защищены
+		  </span>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
+<div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                </div>
+        </div>
+</div> -->
+<!--div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left">
+            <h3 class="text-center">индивидуальный проект</h3>
+            <p>Если вы точно знаете каким должен быть дом вашей мечты,<br> мы спроектируем его построим его под вашим руководством. </p>
+            <p>Мы принимем ваш эскиз в любом виде, и переведем его в конструкторский чертеж, а также смоделируем полноцветный 3d-макет будущего дома.</p>
+            <a  id="projectForm" href="">ЗАЯВКА НА ПРОЕКТ</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <img src="/images/sketch.jpg" alt="" style="width: 100%">
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+</div-->
+<div id="modal_calculate" style="display: none;">
+	<div class="box-modal" id="projectFormModal">
+		<div class="modal-close arcticmodal-close">X</div>
+		<form class="form-inline">
+
+			<div class="form-group row formElement">
+				<label for="exampleInputName2" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Площадь дома </label>
+				<div class="input-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<input type="number" name="" id="input" class="form-control" value="" min="80" max="" step="1" required="required" title="">
+					<div class="input-group-addon">м&sup2;</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+
+
+			<div class="form-group row formElement">
+				<label for="exampleInputName2" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Этажность</label>
+				<div class="input-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							1 этаж
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							2 этажа
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+
+			<div class="form-group">
+
+				<div class="checkbox">
+					<label>
+						<input type="checkbox">Мансарда
+					</label>
+				</div>
+
+			</div>
+			<div class="form-group">
+
+				<div class="checkbox">
+					<label>
+						<input type="checkbox">Цокольный этаж
+					</label>
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+			<div class="form-group">
+				<label for="exampleInputName2">фундамент</label>
+				<select name="" id="input" class="form-control" required="required">
+					<option value="">ленточный</option>
+					<option value="">свайный</option>
+					<option value="">ленточно-свайный</option>
+					<option value="">плита</option>
+					<option value="">мелкозаглубленный</option>
+				</select>
+			</div>
+			<div class="clearfix"></div>
+			<div class="form-group">
+				<label for="exampleInputName2">Стены</label>
+				<select name="" id="input" class="form-control" required="required">
+					<option value="">клееный брус</option>
+					<option value="">фахверк</option>
+				</select>
+			</div>
+			<div class="clearfix"></div>
+			<div class="form-group">
+				<label for="exampleInputName2">кровля</label>
+				<select name="" id="input" class="form-control" required="required">
+					<option value="">металлочерепица</option>
+					<option value="">мягкая кровля</option>
+					<option value="">натуральная черепица</option>
+				</select>
+			</div>
+			<div class="clearfix"></div>
+
+
+			Коммуникации: отопление, водоснабжение, электричество (открытая, скрытая электропроводка).
+		</form>
+	</div>
+</div>
+<div id="modal_callback" style="display: none;">
+	<div class="box-modal" id="backCallFormModal">
+		<div class="modal-close arcticmodal-close">X</div>
+		Форма заказа обратного звонка
+	</div>
+</div>
+<div id="modal_feedback" style="display: none;">
+	<div class="box-modal" id="questionFormModal">
+		<div class="modal-close arcticmodal-close">X</div>
+		<form action="feedback/index.php" method="POST" role="form"  name="form-2">
+			<div class="form-group">
+				<input type="text" class="form-control name" name="name" id="" placeholder="Имя">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control tell" name="tell" id="" placeholder="Телефон">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control name" name="e-mail" id="" placeholder="Эл. почта">
+			</div>
+			<div class="form-group">
+				<textarea rows="4" class="form-control" name="text" id="" placeholder="Сообщение"></textarea>
+			</div>
+			<input type="hidden" value="да" name="checkbox">
+			<input type="button" class="btn btn-default butRed feedback"  name="send"  value="Отправить">
+		</form>
+	</div>
+</div>
+</div>
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="/js/swiper.min.js"></script>
+<script type="text/javascript" src="/feedback/js/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="/feedback/js/jquery.arcticmodal.js"></script>
+<script type="text/javascript" src="/feedback/js/feedback.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
+<script src="/js/init.js"></script>
+<script type="text/javascript" src="/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
+<!-- load main js -->
+<script type="text/javascript" src="/plugins/cube-portfolio/templates/lightbox-gallery/js/main.js"></script>
+</body>
+</html>

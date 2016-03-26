@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html  ng-app="cloverApp">
+<html>
 <head>
-    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36164030 = new Ya.Metrika({id:36164030, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true, ut:"noindex"}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/36164030?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36164030 = new Ya.Metrika({id:36164030, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true, ut:"noindex"}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/36164030?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
 	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
 	<script src="/js/app.js"></script>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 	<title>Дома из клееного бруса по индивидуальному проекту | компания "Клевер уДачи"</title>
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500|Roboto+Condensed:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<link href="slick/slick.css" rel="stylesheet" type="text/css" />
-	<link href="slick/slick-theme.css" rel="stylesheet" type="text/css" />
+	<!--<link href="slick/slick.css" rel="stylesheet" type="text/css" />-->
+	<!--<link href="slick/slick-theme.css" rel="stylesheet" type="text/css" />-->
 	<link href="/feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css" />
 	<link href="/feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css" />
 
@@ -25,14 +27,14 @@
 	<!--<link rel="stylesheet" type="text/css" href="/css/reset.css">-->
 
 	<!-- load css for cubeportfolio -->
-	<link rel="stylesheet" type="text/css" href="/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/cubeportfolio.css">
 
 	<!-- load main css for this page -->
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 	<link href="/css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body  ng-app="cloverApp">
 <div class='container-fluid parallax' id="bgMain" data-type="background" data-speed="100">
 	<nav class="navbar navbar-default container-fluid " role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -58,11 +60,15 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a id="backCallForm">(915)010-4940</a></li>
+					<!--@todo вставить иконку телефона -->
+					<!--@todo вставить ссылку на заказ звонка-->
+					<!--@todo сделать форму заказа звонка-->
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div>
 	</nav>
 	<div class="container" id="main_capt">
+
 		<div><h2  style="">Элитные дома из клееного бруса</h2></div>
 		<div class="text-center hdivider" style="    margin: 23px auto 20px auto;"></div>
 		<h3>индивидуальный проект дома вашей мечты<br>и строительство под ключ</h3>
@@ -79,7 +85,7 @@
 		<!--</button>-->
 	</div>
 </div>
-3
+
 
 <section id="feats">
 	<div class="container" id="features">
@@ -170,41 +176,9 @@
 
 		<div id="grid-container" class="cbp-l-grid-gallery">
 			<ul>
-			    <li class="cbp-item print motion">
-					<a href="ajax/project1.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="World Clock Widget<br>by Paul Flavius Nechita">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/0/ptproject.jpg" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом "Озёрный"</div>
-									<div class="cbp-l-caption-desc">Проект по технологии Фахверк</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="cbp-item print motion">
-					<a href="ajax/project2.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="World Clock Widget<br>by Paul Flavius Nechita">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/1/ptproject.png" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом "Темза"</div>
-									<div class="cbp-l-caption-desc">Проект по технологии Фахверк</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
 				<li class="cbp-item print motion">
 					<a href="ajax/project3.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="World Clock Widget<br>by Paul Flavius Nechita">
+					   data-title="">
 						<div class="cbp-caption-defaultWrap">
 							<img src="/images/prj/2/ptproject.jpg" alt="">
 						</div>
@@ -212,45 +186,78 @@
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
 									<div class="cbp-l-caption-title">Дом "Полёт"</div>
-									<div class="cbp-l-caption-desc">Проект по технологии Фахверк</div>
+									<div class="cbp-l-caption-desc">Спроектирован по технологии "Фахверк"</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			    <li class="cbp-item print motion">
+					<a href="ajax/project1.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/0/ptproject.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом "Озёрный"</div>
+									<div class="cbp-l-caption-desc">Спроектирован по технологии "Фахверк"</div>
 								</div>
 							</div>
 						</div>
 					</a>
 				</li>
 				<li class="cbp-item print motion">
-					<a href="ajax/project1.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="World Clock Widget<br>by Paul Flavius Nechita">
+					<a href="ajax/project2.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/images/prj/1/ptproject.png" alt='Дом "Темза" спроектирован  по технологии "Фахверк"'>
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Дом "Темза"</div>
+									<div class="cbp-l-caption-desc">Спроектирован по технологии "Фахверк"</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="cbp-item print motion">
+					<a href="ajax/project4.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="">
 						<div class="cbp-caption-defaultWrap">
 							<img src="/images/prj/3/ptproject.jpg" alt="">
 						</div>
 						<div class="cbp-caption-activeWrap">
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом ""</div>
-									<div class="cbp-l-caption-desc">Эскизный проект</div>
+									<div class="cbp-l-caption-title">Дом одноэтажный "GT-80"</div>
+									<div class="cbp-l-caption-desc">Эскизный проект жилого дома из клеёного бруса</div>
 								</div>
 							</div>
 						</div>
 					</a>
 				</li>
 				<li class="cbp-item web-design">
-					<a href="ajax/project2.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="Bolt UI<br>by Tiberiu Neamu">
+					<a href="ajax/project5.html" class="cbp-caption cbp-singlePageInline"
+					   data-title="">
 						<div class="cbp-caption-defaultWrap">
 							<img src="/images/prj/4/ptproject.jpg" alt="">
 						</div>
 						<div class="cbp-caption-activeWrap">
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом ""</div>
-									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+									<div class="cbp-l-caption-title">Дом двухэтажный "GT-108"</div>
+									<div class="cbp-l-caption-desc">Эскизный проект жилого дома из клеёного бруса</div>								</div>
 							</div>
 						</div>
 					</a>
 				</li>
 				<li class="cbp-item print motion">
-					<a href="ajax/project3.html" class="cbp-caption cbp-singlePageInline"
+					<a href="ajax/project6.html" class="cbp-caption cbp-singlePageInline"
 					   data-title="WhereTO App<br>by Tiberiu Neamu">
 						<div class="cbp-caption-defaultWrap">
 							<img src="/images/prj/5/ptproject.jpg" alt="">
@@ -258,14 +265,14 @@
 						<div class="cbp-caption-activeWrap">
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
-										<div class="cbp-l-caption-title">Дом ""</div>
-									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
+										<div class="cbp-l-caption-title">Дом двухэтажный "GT-109"</div>
+									<div class="cbp-l-caption-desc">Эскизный проект жилого дома из клеёного бруса</div>								</div>
 							</div>
 						</div>
 					</a>
 				</li>
 				<li class="cbp-item web-design print">
-					<a href="ajax/project4.html" class="cbp-caption cbp-singlePageInline"
+					<a href="ajax/project7.html" class="cbp-caption cbp-singlePageInline"
 					   data-title="iDevices<br>by Tiberiu Neamu">
 						<div class="cbp-caption-defaultWrap">
 							<img src="/images/prj/6/ptproject.jpg" alt="">
@@ -280,7 +287,7 @@
 					</a>
 				</li>
 				<li class="cbp-item motion">
-					<a href="ajax/project5.html" class="cbp-caption cbp-singlePageInline"
+					<a href="ajax/project8.html" class="cbp-caption cbp-singlePageInline"
 					   data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">
 						<div class="cbp-caption-defaultWrap">
 							<img src="/images/prj/7/ptproject.jpg" alt="">
@@ -295,7 +302,7 @@
 					</a>
 				</li>
 				<li class="cbp-item print motion">
-					<a href="ajax/project6.html" class="cbp-caption cbp-singlePageInline"
+					<a href="ajax/project9.html" class="cbp-caption cbp-singlePageInline"
 					   data-title="Remind~Me Widget<br>by Tiberiu Neamu">
 						<div class="cbp-caption-defaultWrap">
 							<img src="/images/prj/8/ptproject.jpg" alt="">
@@ -309,51 +316,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="cbp-item web-design print">
-					<a href="ajax/project7.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="Workout Buddy<br>by Tiberiu Neamu">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/9/ptproject.jpg" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом ""</div>
-									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="cbp-item print">
-					<a href="ajax/project8.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="Digital Menu<br>by Cosmin Capitanu">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/10/ptproject.jpg" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом ""</div>
-									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="cbp-item motion">
-					<a href="ajax/project9.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="Holiday Selector<br>by Cosmin Capitanu">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/11/ptproject.jpg" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом ""</div>
-									<div class="cbp-l-caption-desc">Эскизный проект</div>								</div>
-							</div>
-						</div>
-					</a>
-				</li>
+
 			</ul>
 		</div>
 
@@ -824,15 +787,15 @@
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <!-- Bootstrap JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="/js/swiper.min.js"></script>
+<!--<script src="/js/swiper.min.js"></script>-->
 <script type="text/javascript" src="/feedback/js/jquery.jgrowl.js"></script>
 <script type="text/javascript" src="/feedback/js/jquery.arcticmodal.js"></script>
 <script type="text/javascript" src="/feedback/js/feedback.js"></script>
-<script type="text/javascript" src="slick/slick.js"></script>
+<!--<script type="text/javascript" src="slick/slick.js"></script>-->
 <script src="/js/init.js"></script>
-<script type="text/javascript" src="/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script type="text/javascript" src="/js/jquery.cubeportfolio.js"></script>
 
 <!-- load main js -->
-<script type="text/javascript" src="/plugins/cube-portfolio/templates/lightbox-gallery/js/main.js"></script>
+<script type="text/javascript" src="/js/cube-portfolio.main.js"></script>
 </body>
 </html>

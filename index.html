@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36164030 = new Ya.Metrika({id:36164030, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true, ut:"noindex"}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/36164030?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+	<!-- Yandex.Metrika counter --><!--script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36164030 = new Ya.Metrika({id:36164030, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true, ut:"noindex"}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/36164030?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
 	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
@@ -75,7 +75,7 @@
 		<!-- <div ><h4  style="margin:auto">Мы проектируем и строим дома премиум-класса<br>
         Лучшие природные материалы в комбинации с современными технологиями <br>капитального строительства, гарантируют комфорт и долговечность наших домов.</h4></div>-->
 		<div style="height: 40px"></div>
-		<a type="button" class="btn btn-ord btn-lg" href="#projects">
+		<a type="button" class="btn btn-ord btn-lg" data-toggle="modal" href="#modal_calculate">
 			Рассчитайте свой проект
 		</a>
 
@@ -174,7 +174,7 @@
 			<!--</div>-->
 		<!--</div>-->
 
-		<div id="grid-container" class="cbp-l-grid-gallery">
+		<div  ng-controller="ProjectsController" id="grid-container" class="cbp-l-grid-gallery">
 			<ul>
 				<li class="cbp-item">
 					<a href="ajax/project3.html" class="cbp-caption cbp-singlePageInline"
@@ -639,40 +639,25 @@
 
 
 
-<!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
-<div class="modal fade" id="modal-id">
-        <div class="modal-dialog">
-                <div class="modal-content">
-                        <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title">Modal title</h4>
-                        </div>
-                        <div class="modal-body">
-                        </div>
-                        <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                </div>
-        </div>
-</div> -->
-<!--div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left">
-            <h3 class="text-center">индивидуальный проект</h3>
-            <p>Если вы точно знаете каким должен быть дом вашей мечты,<br> мы спроектируем его построим его под вашим руководством. </p>
-            <p>Мы принимем ваш эскиз в любом виде, и переведем его в конструкторский чертеж, а также смоделируем полноцветный 3d-макет будущего дома.</p>
-            <a  id="projectForm" href="">ЗАЯВКА НА ПРОЕКТ</a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <img src="/images/sketch.jpg" alt="" style="width: 100%">
-        </div>
-    </div>
-    <div class="row">
+ <!--<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>-->
+<!--<div class="modal fade" id="modal-id">-->
+        <!--<div class="modal-dialog">-->
+                <!--<div class="modal-content">-->
+                        <!--<div class="modal-header">-->
+                                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+                                <!--<h4 class="modal-title">Modal title</h4>-->
+                        <!--</div>-->
+                        <!--<div class="modal-body">-->
+                        <!--</div>-->
+                        <!--<div class="modal-footer">-->
+                                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                        <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+<!--</div>-->
 
-    </div>
-</div-->
-<div id="modal_calculate" style="display: none;">
+<!--div id="modal_calculate">
 	<div class="box-modal" id="projectFormModal">
 		<div class="modal-close arcticmodal-close">X</div>
 		<form class="form-inline">
@@ -759,12 +744,14 @@
 		</form>
 	</div>
 </div>
+
 <div id="modal_callback" style="display: none;">
 	<div class="box-modal" id="backCallFormModal">
 		<div class="modal-close arcticmodal-close">X</div>
 		Форма заказа обратного звонка
 	</div>
 </div>
+
 <div id="modal_feedback" style="display: none;">
 	<div class="box-modal" id="questionFormModal">
 		<div class="modal-close arcticmodal-close">X</div>

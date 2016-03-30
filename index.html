@@ -178,99 +178,41 @@
 			<!--</div>-->
 		<!--</div>-->
 
+
+		<!--div  ng-controller="ProjectsController">
+    <div class="projects">
+        <div ng-repeat="project in projects"  class="project">
+            <figure class="peff">
+                <img ng-src="{{project.image}}" class="img-responsive">
+                <figcaption>
+                <h2>{{project.name}}</h2>
+
+                <div class="details">
+                    <a href="#pjdetails{{project.id}}" >Описание</a>
+                </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div-->
+
+
+
+
 		<div  ng-controller="ProjectsController" id="grid-container" class="cbp-l-grid-gallery">
 			<ul>
-				<li class="cbp-item">
-					<a href="ajax/project3.html" class="cbp-caption cbp-singlePageInline"
+				<li ng-repeat="(k, project) in projects" on-last-repeat class="cbp-item">
+					<a href="ajax/project{{k}}.html" class="cbp-caption cbp-singlePageInline"
 					   data-title="">
 						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/2/ptproject.jpg" alt="">
+							<img  ng-src="{{project.renderpic}}" alt="">
 						</div>
 						<div class="cbp-caption-activeWrap">
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом "Полёт"</div>
-									<div class="cbp-l-caption-desc">Спроектирован по технологии "Фахверк"</div>
+									<div class="cbp-l-caption-title">{{project.name}}</div>
+									<div class="cbp-l-caption-desc">{{project.tsquare}}</div>
 								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-			    <li class="cbp-item">
-					<a href="ajax/project1.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/0/ptproject.jpg" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом "Озёрный"</div>
-									<div class="cbp-l-caption-desc">Спроектирован по технологии "Фахверк"</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="cbp-item">
-					<a href="ajax/project2.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/1/ptproject.png" alt='Дом "Темза" спроектирован  по технологии "Фахверк"'>
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом "Темза"</div>
-									<div class="cbp-l-caption-desc">Спроектирован по технологии "Фахверк"</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-
-				<li class="cbp-item">
-					<a href="ajax/project4.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/3/ptproject.jpg" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом "GT-80"</div>
-									<div class="cbp-l-caption-desc">Эскизный проект жилого дома из клеёного бруса</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="cbp-item">
-					<a href="ajax/project5.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/4/ptproject.jpg" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Дом "GT-108"</div>
-									<div class="cbp-l-caption-desc">Эскизный проект жилого дома из клеёного бруса</div>								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="cbp-item">
-					<a href="ajax/project6.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="">
-						<div class="cbp-caption-defaultWrap">
-							<img src="/images/prj/5/ptproject.jpg" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-										<div class="cbp-l-caption-title">Дом "GT-109"</div>
-									<div class="cbp-l-caption-desc">Эскизный проект жилого дома из клеёного бруса</div>								</div>
 							</div>
 						</div>
 					</a>
@@ -292,22 +234,7 @@
 
 
 
-	<!--div  ng-controller="ProjectsController">
-        <div class="projects">
-            <div ng-repeat="project in projects"  class="project">
-                <figure class="peff">
-                    <img ng-src="{{project.image}}" class="img-responsive">
-                    <figcaption>
-                    <h2>{{project.name}}</h2>
 
-                    <div class="details">
-                        <a href="#pjdetails{{project.id}}" >Описание</a>
-                    </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </div-->
 
 </section>
 

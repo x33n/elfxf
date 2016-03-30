@@ -1,3 +1,5 @@
+
+
 (function ($, window, document, undefined) {
     "use strict";
 
@@ -9,6 +11,7 @@
     /*********************************
      init cubeportfolio
      *********************************/
+
     gridContainer.cubeportfolio({
         defaultFilter: '*',
         animationType: 'rotateSides',

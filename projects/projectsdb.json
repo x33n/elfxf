@@ -1,177 +1,410 @@
-[
+{
+  "1" :
   {
-    "id": "0",
-    "name": "дом \"Озерный\"",
-    "price": "1 600 000",
-    "tsquare": 80,
-    "matvol": 43,
-    "image": "/images/prj/0/ptproject.jpg"
+    "id" : 1,
+    "name" : "Полёт",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GLF-445",
+    "matvol" : "",
+    "tsquare" : 445,
+    "terrsquare" : "",
+    "wccount" : 6,
+    "bedcount" : 4,
+    "balcount" : 2,
+    "additional" : "гараж",
+    "renderpic" : "/projects/images/prj-rend-small-2.jpg"
   },
+  "2" :
   {
-    "id": "1",
-    "name": "дом \"Темза\"",
-    "price": "1 600 000",
-    "tsquare": 80,
-    "matvol": 43,
-    "image": "/images/prj/1/ptproject.jpg"
+    "id" : 2,
+    "name" : "Озёрный",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GLF-333",
+    "matvol" : "",
+    "tsquare" : 333,
+    "terrsquare" : "",
+    "wccount" : "",
+    "bedcount" : "",
+    "balcount" : "",
+    "additional" : "",
+    "renderpic" : "/projects/images/prj-rend-small-0.jpg"
   },
+  "3" :
   {
-    "id": "2",
-    "name": "дом \"Полёт\"",
-    "price": "1 600 000",
-    "tsquare": 80,
-    "matvol": 43,
-    "image": "/images/prj/2/ptproject.jpg"
+    "id" : 3,
+    "name" : "Темза",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GLF-288",
+    "matvol" : "",
+    "tsquare" : 288,
+    "terrsquare" : 63,
+    "wccount" : 3,
+    "bedcount" : 3,
+    "balcount" : 2,
+    "additional" :
+    [
+      "котельная",
+      "кабинет"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-1.png"
   },
+  "4" :
   {
-    "id": "3",
-    "name": "дом \"Леонид\"",
-    "price": "1 600 000",
-    "tsquare": 80,
-    "matvol": 43,
-    "image": "/images/prj/3/ptproject.jpg"
+    "id" : 4,
+    "name" : "Леонид",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-80",
+    "matvol" : 43,
+    "tsquare" : 80,
+    "terrsquare" : 32.9,
+    "wccount" : 1,
+    "bedcount" : 1,
+    "balcount" : 0,
+    "additional" : "тамбур",
+    "renderpic" : "/projects/images/prj-rend-small-3.jpg"
   },
+  "5" :
   {
-    "id": "4",
-    "name": "Диана",
-    "price": "2 300 000",
-    "tsquare": 108,
-    "matvol": 60,
-    "image": "/images/prj/4/ptproject.jpg"
+    "id" : 5,
+    "name" : "Диана",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-108",
+    "matvol" : 60,
+    "tsquare" : 108,
+    "terrsquare" : 13.6,
+    "wccount" : 2,
+    "bedcount" : 3,
+    "balcount" : 0,
+    "additional" :
+    [
+      "душевая",
+      "парилка"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-4.jpg"
   },
+  "6" :
   {
-    "id": "5",
-    "name": "Наталия",
-    "price": "2 600 000",
-    "tsquare": 109,
-    "matvol": 68,
-    "image": "/images/prj/5/ptproject.jpg"
+    "id" : 6,
+    "name" : "Наталия",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-109",
+    "matvol" : 68,
+    "tsquare" : 109,
+    "terrsquare" : 9.1,
+    "wccount" : 1,
+    "bedcount" : 3,
+    "balcount" : 1,
+    "additional" :
+    [
+      "гостиная со  вторым светом",
+      "2 крыльца",
+      "навес для авто"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-5.jpg"
   },
+  "7" :
   {
-    "id": "6",
-    "name": "Юлия",
-    "price": "2 500 000",
-    "tsquare": 116,
-    "matvol": 65,
-    "image": "/images/prj/6/ptproject.jpg"
+    "id" : 7,
+    "name" : "Юлия",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-116",
+    "matvol" : 51.9,
+    "tsquare" : 116.4,
+    "terrsquare" : 10.9,
+    "wccount" : 1,
+    "bedcount" : 3,
+    "balcount" : 0,
+    "additional" : "хозпомещение",
+    "renderpic" : "/projects/images/prj-rend-small-6.jpg"
   },
+  "8" :
   {
-    "id": "7",
-    "name": "Александр",
-    "price": "2 300 000",
-    "tsquare": 117,
-    "matvol": 60,
-    "image": "/images/prj/7/ptproject.jpg"
+    "id" : 8,
+    "name" : "Александр",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-117",
+    "matvol" : 60,
+    "tsquare" : 117,
+    "terrsquare" : 13.1,
+    "wccount" : 1,
+    "bedcount" : 2,
+    "balcount" : 1,
+    "additional" : "",
+    "renderpic" : "/projects/images/prj-rend-small-7.jpg"
   },
+  "9" :
   {
-    "id": "8",
-    "name": "Ольга",
-    "price": "2 400 000",
-    "tsquare": 121,
-    "matvol": 61,
-    "image": "/images/prj/8/ptproject.jpg"
+    "id" : 9,
+    "name" : "Ольга",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-121",
+    "matvol" : 61,
+    "tsquare" : 121,
+    "terrsquare" : 5.9,
+    "wccount" : 2,
+    "bedcount" : 3,
+    "balcount" : 0,
+    "additional" : "котельная",
+    "renderpic" : "/projects/images/prj-rend-small-8.jpg"
   },
+  "10" :
   {
-    "id": "9",
-    "name": "Марсель",
-    "price": "2 500 000",
-    "tsquare": 148,
-    "matvol": 78,
-    "image": "/images/prj/9/ptproject.jpg"
+    "id" : 10,
+    "name" : "Марсель",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-148",
+    "matvol" : 78,
+    "tsquare" : 148,
+    "terrsquare" : 6.6,
+    "wccount" : 2,
+    "bedcount" : 3,
+    "balcount" : 1,
+    "additional" : "бойлерная",
+    "renderpic" : "/projects/images/prj-rend-small-9.jpg"
   },
+  "11" :
   {
-    "id": "10",
-    "name": "Виталий",
-    "price": "4 350 000",
-    "tsquare": 158,
-    "matvol": 105,
-    "image": "/images/prj/10/ptproject.jpg"
+    "id" : 11,
+    "name" : "Виталий",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-158",
+    "matvol" : 105,
+    "tsquare" : 158,
+    "terrsquare" : 11.8,
+    "wccount" : 1,
+    "bedcount" : 2,
+    "balcount" : 0,
+    "additional" : "бойлерная",
+    "renderpic" : "/projects/images/prj-rend-small-10.jpg"
   },
+  "12" :
   {
-    "id": "11",
-    "name": "Татьяна",
-    "price": "3 380 000",
-    "tsquare": 167,
-    "matvol": 80,
-    "image": "/images/prj/11/ptproject.jpg"
+    "id" : 12,
+    "name" : "Татьяна",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-167",
+    "matvol" : 80,
+    "tsquare" : 167,
+    "terrsquare" : 14.4,
+    "wccount" : 2,
+    "bedcount" : 3,
+    "balcount" : 2,
+    "additional" :
+    [
+      "кабинет",
+      "комната отдыха",
+      "кладовая"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-11.jpg"
   },
+  "13" :
   {
-    "id": "12",
-    "name": "баня Афина",
-    "price": "3 850 000",
-    "tsquare": 190,
-    "matvol": 98,
-    "image": "/images/prj/12/ptproject.jpg"
+    "id" : 13,
+    "name" : "Афина",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-190",
+    "matvol" : 98,
+    "tsquare" : 190,
+    "terrsquare" : 6.6,
+    "wccount" : 2,
+    "bedcount" : 2,
+    "balcount" : 0,
+    "additional" :
+    [
+      "котельная",
+      "гардероб",
+      "моечная",
+      "парилка"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-12.jpg"
   },
+  "14" :
   {
-    "id": "13",
-    "name": "Руслан",
-    "price": "4 200 000",
-    "tsquare": 197,
-    "matvol": 110,
-    "image": "/images/prj/13/ptproject.jpg"
+    "id" : 14,
+    "name" : "Руслан",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-197",
+    "matvol" : 110,
+    "tsquare" : 197,
+    "terrsquare" : 9.3,
+    "wccount" : 1,
+    "bedcount" : 6,
+    "balcount" : 0,
+    "additional" :
+    [
+      "бойлерная",
+      "душевая"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-13.jpg"
   },
+  "15" :
   {
-    "id": "14",
-    "name": "Михаил",
-    "price": "3 950 000",
-    "tsquare": 201,
-    "matvol": 98,
-    "image": "/images/prj/14/ptproject.jpg"
+    "id" : 15,
+    "name" : "Михаил",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-201",
+    "matvol" : 98,
+    "tsquare" : 201,
+    "terrsquare" : 7,
+    "wccount" : 2,
+    "bedcount" : 3,
+    "balcount" : 0,
+    "additional" :
+    [
+      "душевая",
+      "второй свет",
+      "парилка",
+      "моечная"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-14.jpg"
   },
+  "16" :
   {
-    "id": "15",
-    "name": "Ярослав",
-    "price": "4 150 000",
-    "tsquare": 214,
-    "matvol": 108,
-    "image": "/images/prj/15/ptproject.jpg"
+    "id" : 16,
+    "name" : "Ярослав",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-214",
+    "matvol" : 108,
+    "tsquare" : 214,
+    "terrsquare" : 18.6,
+    "wccount" : 1,
+    "bedcount" : 3,
+    "balcount" : 1,
+    "additional" :
+    [
+      "кабинет",
+      "м гостиная со  вторым светос"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-15.jpg"
   },
+  "17" :
   {
-    "id": "16",
-    "name": "Афродита",
-    "price": "3 850 000",
-    "tsquare": 225,
-    "matvol": 85,
-    "image": "/images/prj/16/ptproject.jpg"
+    "id" : 17,
+    "name" : "Афродита",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-225",
+    "matvol" : 85,
+    "tsquare" : 225,
+    "terrsquare" : 30.1,
+    "wccount" : 3,
+    "bedcount" : 3,
+    "balcount" : 0,
+    "additional" :
+    [
+      "кабинет",
+      "котельная"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-16.jpg"
   },
+  "18" :
   {
-    "id": "17",
-    "name": "Екатерина",
-    "price": "4 200 000",
-    "tsquare": 227,
-    "matvol": 100,
-    "image": "/images/prj/17/ptproject.jpg"
+    "id" : 18,
+    "name" : "Екатерина",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : " GT-227",
+    "matvol" : 100,
+    "tsquare" : 227,
+    "terrsquare" : 93.3,
+    "wccount" : 1,
+    "bedcount" : 3,
+    "balcount" : 1,
+    "additional" : "бойлерная",
+    "renderpic" : "/projects/images/prj-rend-small-17.jpg"
   },
+  "19" :
   {
-    "id": "18",
-    "name": "Лилия",
-    "price": "4 350 000",
-    "tsquare": 256,
-    "matvol": 95,
-    "image": "/images/prj/18/ptproject.jpg"
+    "id" : 19,
+    "name" : "Лилия",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-256",
+    "matvol" : 95,
+    "tsquare" : 256,
+    "terrsquare" : 43,
+    "wccount" : 2,
+    "bedcount" : 3,
+    "balcount" : 1,
+    "additional" :
+    [
+      "бассейн",
+      "душевая",
+      "тех.помещение",
+      "котельная",
+      "кладовая",
+      "второй свет"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-18.jpg"
   },
+  "20" :
   {
-    "id": "19",
-    "name": "Олеся",
-    "price": "7 500 000",
-    "tsquare": 326,
-    "matvol": 190,
-    "image": "/images/prj/19/ptproject.jpg"
+    "id" : 20,
+    "name" : "Олеся",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-326",
+    "matvol" : "",
+    "tsquare" : 326,
+    "terrsquare" : "",
+    "wccount" : 4,
+    "bedcount" : 8,
+    "balcount" : 0,
+    "additional" :
+    [
+      "Двухквартирный дом",
+      "2 душевых",
+      "2 котельных",
+      "2 террасы зеркально."
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-19.jpg"
   },
+  "21" :
   {
-    "id": "20",
-    "name": "Владимир",
-    "price": "7 500 000",
-    "tsquare": 490,
-    "matvol": 240,
-    "image": "/images/prj/20/ptproject.jpg"
+    "id" : 21,
+    "name" : "Владимир",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-490",
+    "matvol" : 240,
+    "tsquare" : 490,
+    "terrsquare" : "",
+    "wccount" : "",
+    "bedcount" : "",
+    "balcount" : "",
+    "additional" : "",
+    "renderpic" : "/projects/images/prj-rend-small-20.jpg"
   },
+  "22" :
   {
-    "id": "21",
-    "name": "Евгений",
-    "price": "7 920 000",
-    "tsquare": 500,
-    "matvol": 360,
-    "image": "/images/prj/21/ptproject.jpg"
-  }]
+    "id" : 22,
+    "name" : "Евгений",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-500",
+    "matvol" : 360,
+    "tsquare" : 500,
+    "terrsquare" : "",
+    "wccount" : "",
+    "bedcount" : "",
+    "balcount" : "",
+    "additional" : "",
+    "renderpic" : "/projects/images/prj-rend-small-21.jpg"
+  }
+}

@@ -39,65 +39,70 @@
 
 
 <body  ng-app="cloverApp">
-<div class='container-fluid parallax' id="bgMain" data-type="background" data-speed="100">
-	<nav class="navbar navbar-default container-fluid " role="navigation">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Меню</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#" style="  margin-right: 70px;">
-				    <img src="/images/clover-logo.png" style="width: 145px;padding-top: 20px; opacity: 0.8"/></a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav" style="opacity: 0.9; padding-top: 40px;" >
-					<li><a href="#projects" data-scroll="" >наши проекты</a></li>
-					<li><a href="#big_one" data-scroll="" >материалы и технологии</a></li>
-					<li><a href="#comm" data-scroll="" >этапы работы</a></li>
-					<!--li><a href="#about">о нас</a></li-->
-					<li><a href="#contacts" data-scroll="" >контакты</a></li>
-				</ul>
 
-				<ul class="nav navbar-nav navbar-right">
-					<li id="headerPhone">
+<section id="mainScreen">
+
+	<div class='parallax' id="bgMain" data-type="background" data-speed="100">
+		<nav class="navbar navbar-default container-fluid " role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Меню</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" style="  margin-right: 70px;">
+						<img src="/images/clover-logo.png" style="width: 145px;padding-top: 20px; opacity: 0.8"/></a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav" style="opacity: 0.9; padding-top: 40px;" >
+						<li><a href="#projects" data-scroll="" >наши проекты</a></li>
+						<li><a href="#big_one" data-scroll="" >материалы и технологии</a></li>
+						<li><a href="#comm" data-scroll="" >этапы работы</a></li>
+						<!--li><a href="#about">о нас</a></li-->
+						<li><a href="#contacts" data-scroll="" >контакты</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li id="headerPhone">
 
 
 							<span>915-010-4940</span>
-						<img src="/images/header_phone.png" alt="">
+							<img src="/images/header_phone.png" alt="">
 
 
-					</li>
+						</li>
 
-					<!--@todo вставить ссылку на заказ звонка-->
-					<!--@todo сделать форму заказа звонка-->
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div>
-	</nav>
-	<div class="container" id="main_capt">
+						<!--@todo вставить ссылку на заказ звонка-->
+						<!--@todo сделать форму заказа звонка-->
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<div class="container" id="main_capt">
 
-		<div><h2  style="">Элитные дома из клееного бруса</h2></div>
-		<div class="text-center hdivider" style="    margin: 23px auto 20px auto;"></div>
-		<h3>индивидуальный проект дома вашей мечты<br>и строительство под ключ</h3>
-		<!-- <div ><h4  style="margin:auto">Мы проектируем и строим дома премиум-класса<br>
-        Лучшие природные материалы в комбинации с современными технологиями <br>капитального строительства, гарантируют комфорт и долговечность наших домов.</h4></div>-->
-		<div style="height: 40px"></div>
-		<a type="button" class="btn btn-ord btn-lg" data-toggle="modal" href="#modal_calculate">
-			Рассчитайте свой проект
-		</a>
+			<div><h2  style="">Элитные дома из клееного бруса</h2></div>
+			<div class="text-center hdivider" style="    margin: 23px auto 20px auto;"></div>
+			<h3>индивидуальный проект дома вашей мечты<br>и строительство под ключ</h3>
+			<!-- <div ><h4  style="margin:auto">Мы проектируем и строим дома премиум-класса<br>
+            Лучшие природные материалы в комбинации с современными технологиями <br>капитального строительства, гарантируют комфорт и долговечность наших домов.</h4></div>-->
+			<div style="height: 40px"></div>
+			<a type="button" class="btn btn-ord btn-lg" data-toggle="modal" href="#modal_calculate">
+				Рассчитайте свой проект
+			</a>
 
-		<!-- <button type="button" class="btn btn-ord">Свой проект</button> -->
-		<!--<button type="button" class="btn btn-trans"  id="questionForm" >Задать вопрос-->
+			<!-- <button type="button" class="btn btn-ord">Свой проект</button> -->
+			<!--<button type="button" class="btn btn-trans"  id="questionForm" >Задать вопрос-->
 			<!--<span class="glyphicon glyphicon-earphone" aria-hidden="true" style="margin-left: 10px"></span>-->
-		<!--</button>-->
+			<!--</button>-->
+		</div>
 	</div>
-</div>
 
+
+</section>
 
 <section id="feats">
 	<div class="container" id="features">
@@ -337,7 +342,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="#" title="">
-					<img style="display: block;" src="/images/img-serv-arch.jpg" alt="">
+					<img class="img-responsive" src="/images/img-serv-arch.jpg" alt="">
 				</a>
 				<h4><a href="#" title="">Проектирование и подготовка документации</a></h4>
 				<div class="servithg"></div>
@@ -345,7 +350,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="#" title="">
-					<img style="display: block;" src="/images/img-serv-prep.jpg" alt="">
+					<img class="img-responsive" src="/images/img-serv-prep.jpg" alt="">
 				</a>
 				<h4><a href="#" title="">Подготовка строительной площадки</a></h4>
 				<div class="servithg"></div>
@@ -353,7 +358,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="#" title="">
-					<img style="display: block;" src="/images/image_03_001.jpg" alt="">
+					<img class="img-responsive" src="/images/image_03_001.jpg" alt="">
 				</a>
 				<h4><a href="" title="">Строительство и отделка</a></h4>
 				<div class="servithg"></div>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru" ng-app="cloverApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Дома из клееного бруса по индивидуальному проекту | компания "Клевер уДачи"</title>
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>-->
 	<!--<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>-->
@@ -13,32 +15,19 @@
 
 	<!-- Yandex.Metrika counter --><!--script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36164030 = new Ya.Metrika({id:36164030, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true, ut:"noindex"}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/36164030?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 
-
-
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500|Roboto+Condensed:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
-
-	<!--<link href="slick/slick.css" rel="stylesheet" type="text/css" />-->
-	<!--<link href="slick/slick-theme.css" rel="stylesheet" type="text/css" />-->
 	<!--<link href="/feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css" />-->
 	<!--<link href="/feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css" />-->
+	<link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css">
 
-
-
-	<!--<link rel="stylesheet" type="text/css" href="/css/reset.css">-->
-
-	<!-- load css for cubeportfolio -->
-	<link rel="stylesheet" type="text/css" href="/css/cubeportfolio.css">
-
-	<!-- load main css for this page -->
-	<link rel="stylesheet" type="text/css" href="/css/cube-portfolio.main.css">
-
+	<!-- main styles -->
 	<link rel="stylesheet" type="text/css"  href="/css/style.css" />
 </head>
 
 
-<body  ng-app="cloverApp">
+<body>
 
 <section id="mainScreen">
 
@@ -167,73 +156,41 @@
 	</div>
 
 
+	<div class="swiper-container" ng-controller="ProjectsController">
+		<div class="swiper-wrapper">
+			<div  ng-repeat="(k, project) in projects" on-last-repeat class="swiper-slide">
+				<div class="swiper-slide-image">
+					<div class="swiper-slide-tsquare">
+						<span>{{project.tsquare}}м&sup2;</span>
+					</div>
+					<img  ng-src="{{project.renderpic}}" alt="">
+				</div>
 
+				<div class="swiper-slide-caption">
+					<header style="background-color: rgb(158, 165, 159);">
+						<h3>Дом "{{project.artic}}"</h3>
+						<h4>{{project.title}}</h4>
+					</header>
+					<footer>
+						<dl>
+							<dt>Спальни</dt>
+							<dd>{{project.bedcount}}</dd>
+							<dt>Санузлы</dt>
+							<dd>{{project.wccount}}</dd>
+							<dt>Балконы</dt>
+							<dd>{{project.balcount}}</dd>
+							<dt>Площадь дома</dt>
+							<dd>{{project.tsquare}}м&sup2;</dd>
+						</dl>
+					</footer>
 
-	<div class="wrapper">
+				</div>
 
-		<!--<div id="filters-container" class="cbp-l-filters-dropdown">-->
-			<!--<div class="cbp-l-filters-dropdownWrap">-->
-				<!--<div class="cbp-l-filters-dropdownHeader">Сортировать</div>-->
-				<!--<div class="cbp-l-filters-dropdownList">-->
-					<!--<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">-->
-						<!--Все (<div class="cbp-filter-counter"></div> проектов)-->
-					<!--</div>-->
-					<!--<div data-filter=".print" class="cbp-filter-item">-->
-						<!--Одноэтажные (<div class="cbp-filter-counter"></div> проектов)-->
-					<!--</div>-->
-					<!--<div data-filter=".web-design" class="cbp-filter-item">-->
-						<!--Двухэтажные (<div class="cbp-filter-counter"></div> проектов)-->
-					<!--</div>-->
-					<!--<div data-filter=".motion" class="cbp-filter-item">-->
-						<!--Бани (<div class="cbp-filter-counter"></div> проектов)-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</div>-->
-
-
-
-
-
-
-
-		<div  ng-controller="ProjectsController" id="grid-container" class="cbp-l-grid-gallery">
-			<ul>
-				<li ng-repeat="(k, project) in projects" on-last-repeat class="cbp-item">
-					<a href="ajax/project{{k}}.html" class="cbp-caption cbp-singlePageInline"
-					   data-title="">
-						<div class="cbp-caption-defaultWrap">
-							<img  ng-src="{{project.renderpic}}" alt="">
-						</div>
-						<div class="cbp-caption-activeWrap">
-							<div class="cbp-l-caption-alignLeft">
-								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">{{project.artic}}</div>
-									<div class="cbp-l-caption-desc">{{project.tsquare}}</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-
-
-			</ul>
+			</div>
 		</div>
-
-		<div class="cbp-l-loadMore-button">
-			<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">показать все</a>
-		</div>
-
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
 	</div>
-
-
-
-
-
-
-
-
-
 </section>
 
 <section id="par_iwant" data-type="background" data-speed="2" >
@@ -275,7 +232,6 @@
 </div>
 
 </section>
-
 
 
 
@@ -658,7 +614,11 @@
 		</form>
 	</div>
 </div>
-</div>
+</div-->
+
+
+
+<script type="text/javascript" src="/bower_components/swiper/dist/js/swiper.min.js"></script>
 <!-- jQuery -->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -666,18 +626,18 @@
 <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/scroll.js"></script>
 <!--<script src="/js/swiper.min.js"></script>-->
-<script type="text/javascript" src="/feedback/js/jquery.jgrowl.js"></script>
-<script type="text/javascript" src="/feedback/js/jquery.arcticmodal.js"></script>
-<script type="text/javascript" src="/feedback/js/feedback.js"></script>
+<!--<script type="text/javascript" src="/feedback/js/jquery.jgrowl.js"></script>-->
+<!--<script type="text/javascript" src="/feedback/js/jquery.arcticmodal.js"></script>-->
+<!--<script type="text/javascript" src="/feedback/js/feedback.js"></script>-->
 <!--<script type="text/javascript" src="slick/slick.js"></script>-->
 <script src="/js/gumshoe.js"></script>
 <script src="/js/smooth-scroll.min.js"></script>
 
 <script type="text/javascript" src="/js/init.js"></script>
 
-<script type="text/javascript" src="/js/jquery.cubeportfolio.js"></script>
+<!--<script type="text/javascript" src="/js/jquery.cubeportfolio.js"></script>-->
 
 <!-- load main js -->
-<script type="text/javascript" src="/js/cube-portfolio.main.js"></script>
+<!--<script type="text/javascript" src="/js/cube-portfolio.main.js"></script>-->
 </body>
 </html>

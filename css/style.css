@@ -55,6 +55,111 @@ background: url('../images/bg_main_2.jpg') no-repeat fixed center top;
 }
 
 
+
+.swiper-container {
+    width: 100%;
+    min-height: 450px;
+    margin: 20px auto;
+    padding-bottom: 60px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    max-width: 373px;
+
+    /*!* Center slide text vertically *!*/
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    display: block;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: #626262;
+}
+
+
+.swiper-slide-image {
+    position: relative;
+}
+
+.swiper-slide-tsquare {
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    bottom: -16px;
+    background-color: #FF5619;
+    color: #fff;
+    padding: 6px 15px;
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+}
+
+.swiper-slide-tsquare span{
+    position: relative;
+    z-index: 2;
+}
+
+.swiper-slide-caption h3 {
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-align: left;
+
+}
+
+.swiper-slide-caption h4 {
+    font-family: "Roboto",sans-serif;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.swiper-slide-caption header {
+    background-color: #919191;
+    color: #fff;
+    padding: 30px;
+}
+
+
+.swiper-slide-caption  dl {
+    color: #222;
+    font-size: 13px;
+    padding: 30px;
+}
+
+.swiper-slide-caption  dl dt {
+    float: left;
+    font-weight: normal;
+}
+
+.swiper-slide-caption dl dd {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
 #personalWhite {
     padding-top: 30px;
     padding-bottom: 30px;

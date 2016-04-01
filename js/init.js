@@ -11,12 +11,25 @@ $(function() {
         $bgobj.css({ backgroundPosition: coords });
      });
 
+
+
+
+
     smoothScroll.init({
         offset: 20
     });
     gumshoe.init({
         offset: 21
     });
+
+
+
+
+
+
+
+
+
 
 $(document).on('click', '#projectForm', function(){
 

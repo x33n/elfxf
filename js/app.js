@@ -52,7 +52,10 @@ angular.module('cloverApp', []).
 				slidesPerView: 'auto',
 				centeredSlides: true,
 				paginationClickable: true,
-				spaceBetween: 25
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				spaceBetween: 20,
+
 			});
 
 		});

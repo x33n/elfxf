@@ -12,7 +12,7 @@
     "wccount" : 6,
     "bedcount" : 4,
     "balcount" : 2,
-    "additional" : "гараж",
+    "additional" : ["гараж"],
     "renderpic" : "/projects/images/prj-rend-small-2.jpg"
   },
   "2" :
@@ -64,7 +64,7 @@
     "wccount" : 1,
     "bedcount" : 1,
     "balcount" : 0,
-    "additional" : "тамбур",
+    "additional" : ["тамбур"],
     "renderpic" : "/projects/images/prj-rend-small-3.jpg"
   },
   "5" :
@@ -121,7 +121,7 @@
     "wccount" : 1,
     "bedcount" : 3,
     "balcount" : 0,
-    "additional" : "хозпомещение",
+    "additional" : ["хозпомещение"],
     "renderpic" : "/projects/images/prj-rend-small-6.jpg"
   },
   "8" :
@@ -153,7 +153,7 @@
     "wccount" : 2,
     "bedcount" : 3,
     "balcount" : 0,
-    "additional" : "котельная",
+    "additional" : ["котельная"],
     "renderpic" : "/projects/images/prj-rend-small-8.jpg"
   },
   "10" :
@@ -169,7 +169,7 @@
     "wccount" : 2,
     "bedcount" : 3,
     "balcount" : 1,
-    "additional" : "бойлерная",
+    "additional" : ["бойлерная"],
     "renderpic" : "/projects/images/prj-rend-small-9.jpg"
   },
   "11" :
@@ -185,7 +185,7 @@
     "wccount" : 1,
     "bedcount" : 2,
     "balcount" : 0,
-    "additional" : "бойлерная",
+    "additional" : ["бойлерная"],
     "renderpic" : "/projects/images/prj-rend-small-10.jpg"
   },
   "12" :
@@ -326,7 +326,7 @@
     "wccount" : 1,
     "bedcount" : 3,
     "balcount" : 1,
-    "additional" : "бойлерная",
+    "additional" : ["бойлерная"],
     "renderpic" : "/projects/images/prj-rend-small-17.jpg"
   },
   "19" :

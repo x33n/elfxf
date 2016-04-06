@@ -48,17 +48,17 @@ angular.module('cloverApp', []).
 			//);
 			console.log("projects loaded");
 			var swiper = new Swiper('.swiper-container', {
-				//pagination: '.swiper-pagination',
+				pagination: '.swiper-pagination',
 				//setWrapperSize: true,
 				slidesPerView: 'auto',
 				centeredSlides: true,
-				//paginationClickable: true,
+				paginationClickable: true,
 				nextButton: '.swiper-button-next',
 				prevButton: '.swiper-button-prev',
 				spaceBetween: 20,
 				speed: 400,
 				grabCursor: true,
-				initialSlide: 0,
+				initialSlide: 1,
 				preloadImages: false,
 				//autoplay: 5000,
 				slideToClickedSlide: true,

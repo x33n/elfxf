@@ -62,7 +62,7 @@ background: url('../images/bg_main_2.jpg') no-repeat fixed center top;
     width: 100%;
     min-height: 450px;
     margin: 20px auto;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 }
 .swiper-slide {
     text-align: center;
@@ -154,7 +154,7 @@ background: url('../images/bg_main_2.jpg') no-repeat fixed center top;
 }
 
 .swiper-slide-caption header {
-    background-color: #919191;
+    background-color: rgb(141, 153, 142);
     color: #fff;
     padding: 20px 40px;
 }

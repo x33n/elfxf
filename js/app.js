@@ -53,6 +53,7 @@ angular.module('cloverApp', []).
 				slidesPerView: 'auto',
 				centeredSlides: true,
 				paginationClickable: true,
+				paginationType: 'fraction',
 				nextButton: '.swiper-button-next',
 				prevButton: '.swiper-button-prev',
 				spaceBetween: 20,

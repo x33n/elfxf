@@ -451,9 +451,9 @@ h6.box-header {
     color: #FFF;
     text-transform: uppercase;
     font-family: 'Roboto';
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
-    background: #82B541;
+    background: #FF5619;
     letter-spacing: 1px;
     padding: 16px 23px 15px;
     text-align: center;
@@ -468,14 +468,15 @@ h6.box-header {
     transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
-    border: 2px solid #82B541;
+    border: 2px solid #FF5619;
 }
 
 .btn-ownord:hover {
-    color: #000;
+    color: #FFF;
     background: transparent;
     opacity: 1;
     text-decoration: none;
+    border: 2px solid #FFF;
 }
 
 
@@ -674,6 +675,10 @@ margin-top: 60px;
     }
     .btn-ord {
         font-size: 15px;
+    }
+
+    #par_iwant h3 {
+        font-size: 27px;
     }
 }
 

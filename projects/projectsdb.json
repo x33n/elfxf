@@ -51,6 +51,25 @@
     ],
     "renderpic" : "/projects/images/prj-rend-small-1.jpg"
   },
+  "23" :
+  {
+    "id" : 3,
+    "name" : "фокус",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GLF-224",
+    "matvol" : "",
+    "tsquare" : 224,
+    "terrsquare" : 9.8,
+    "wccount" : 4,
+    "bedcount" : 4,
+    "balcount" : 2,
+    "additional" :
+    [
+      "котельная"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-23.jpg"
+  },
   "4" :
   {
     "id" : 4,

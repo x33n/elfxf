@@ -487,6 +487,13 @@ h6.box-header {
     color: #000;
 }
 
+h3 small {
+    text-transform: none;
+    color: #fff;
+    font-size: 80%;
+}
+
+
 #wantico_wrap {
 margin-top: 60px;
     margin-bottom: 30px;

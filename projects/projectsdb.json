@@ -14,7 +14,8 @@
     "balcount" : 4,
     "additional" : [
       "гараж",
-      "кинотеатр"
+      "кинотеатр",
+      "котельная"
     ],
     "renderpic" : "/projects/images/prj-rend-small-25.jpg"
   },

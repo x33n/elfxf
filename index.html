@@ -9,6 +9,7 @@
 
 	<script src="/bower_components/angular/angular.min.js"></script>
 	<script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="/bower_components/angular-modal-service/dst/angular-modal-service.js"></script>
 	<!--<script src="/bower_components/angular-route/angular-route.min.js"></script>-->
 	<!--<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>-->
 	<script src="/bower_components/idialog/src/js/idialog.js"></script>
@@ -197,7 +198,8 @@
 							<dd>{{project.balcount}}</dd>
 
 						</dl>
-						<a href="" idialog="projectDesc" class="btn btn-projinfo">Подробности</a>
+
+						<a href class="btn btn-projectInfo"  ng-click="showProjectInfo()">Подробности</a>
 					</footer>
 
 				</div>
@@ -215,7 +217,9 @@
 
 </section>
 <script type="text/ng-template" id="projectDesc">
+<div>
 
+</div>
 </script>
 <section id="par_iwant" data-type="background" data-speed="2" >
 	<div style="position: absolute; width: 100%; height: inherit; background-color: rgba(100, 100, 100, 0.7);"></div>

@@ -15,7 +15,7 @@
     "additional" : ["гараж"],
     "renderpic" : "/projects/images/prj-rend-small-2.jpg"
   },
-  "2" :
+  "5" :
   {
     "id" : 2,
     "name" : "Озёрный",
@@ -53,7 +53,7 @@
   },
   "4" :
   {
-    "id" : 3,
+    "id" : 4,
     "name" : "фокус",
     "title" : "Эскизный проект жилого дома",
     "description" : "Полное описание проекта ещё в разработке",
@@ -70,41 +70,27 @@
     ],
     "renderpic" : "/projects/images/prj-rend-small-23.jpg"
   },
-  "23" :
-  {
-    "id" : 4,
-    "name" : "Леонид",
-    "title" : "Эскизный проект жилого дома",
-    "description" : "Полное описание проекта ещё в разработке",
-    "artic" : "GT-80",
-    "matvol" : 43,
-    "tsquare" : 80,
-    "terrsquare" : 32.9,
-    "wccount" : 1,
-    "bedcount" : 1,
-    "balcount" : 0,
-    "additional" : ["тамбур"],
-    "renderpic" : "/projects/images/prj-rend-small-3.jpg"
-  },
-  "5" :
+  "2" :
   {
     "id" : 5,
-    "name" : "Диана",
+    "name" : "Дружба",
     "title" : "Эскизный проект жилого дома",
     "description" : "Полное описание проекта ещё в разработке",
-    "artic" : "GT-108",
-    "matvol" : 60,
-    "tsquare" : 108,
-    "terrsquare" : 13.6,
-    "wccount" : 2,
-    "bedcount" : 3,
-    "balcount" : 0,
+    "artic" : "GLF-368",
+    "matvol" : "",
+    "tsquare" : 368,
+    "terrsquare" : 15.2,
+    "wccount" : 3,
+    "bedcount" : 4,
+    "balcount" : 2,
     "additional" :
     [
       "душевая",
-      "парилка"
+      "сауна",
+      "бойлерная",
+      "кладовая"
     ],
-    "renderpic" : "/projects/images/prj-rend-small-4.jpg"
+    "renderpic" : "/projects/images/prj-rend-small-24.jpg"
   },
   "6" :
   {
@@ -425,5 +411,42 @@
     "balcount" : "-",
     "additional" : "-",
     "renderpic" : "/projects/images/prj-rend-small-21.jpg"
+  },
+  "23" :
+  {
+    "id" : 23,
+    "name" : "Леонид",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-80",
+    "matvol" : 43,
+    "tsquare" : 80,
+    "terrsquare" : 32.9,
+    "wccount" : 1,
+    "bedcount" : 1,
+    "balcount" : 0,
+    "additional" : ["тамбур"],
+    "renderpic" : "/projects/images/prj-rend-small-3.jpg"
+  },
+
+  "24" :
+  {
+    "id" : 5,
+    "name" : "Диана",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GT-108",
+    "matvol" : 60,
+    "tsquare" : 108,
+    "terrsquare" : 13.6,
+    "wccount" : 2,
+    "bedcount" : 3,
+    "balcount" : 0,
+    "additional" :
+    [
+      "душевая",
+      "парилка"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-4.jpg"
   }
 }

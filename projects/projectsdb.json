@@ -2,6 +2,25 @@
   "1" :
   {
     "id" : 1,
+    "name" : "Черкизово",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GLF-575",
+    "matvol" : "",
+    "tsquare" : 575,
+    "terrsquare" : 28.7,
+    "wccount" : 4,
+    "bedcount" : 4,
+    "balcount" : 4,
+    "additional" : [
+      "гараж",
+      "кинотеатр"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-25.jpg"
+  },
+  "2" :
+  {
+    "id" : 1,
     "name" : "Полёт",
     "title" : "Эскизный проект жилого дома",
     "description" : "Полное описание проекта ещё в разработке",
@@ -15,62 +34,7 @@
     "additional" : ["гараж"],
     "renderpic" : "/projects/images/prj-rend-small-2.jpg"
   },
-  "5" :
-  {
-    "id" : 2,
-    "name" : "Озёрный",
-    "title" : "Эскизный проект жилого дома",
-    "description" : "Полное описание проекта ещё в разработке",
-    "artic" : "GLF-333",
-    "matvol" : "",
-    "tsquare" : 333,
-    "terrsquare" : "-;",
-    "wccount" : "-",
-    "bedcount" : "-",
-    "balcount" : "-",
-    "additional" : "-",
-    "renderpic" : "/projects/images/prj-rend-small-0.jpg"
-  },
   "3" :
-  {
-    "id" : 3,
-    "name" : "Темза",
-    "title" : "Эскизный проект жилого дома",
-    "description" : "Полное описание проекта ещё в разработке",
-    "artic" : "GLF-288",
-    "matvol" : "",
-    "tsquare" : 288,
-    "terrsquare" : 63,
-    "wccount" : 3,
-    "bedcount" : 3,
-    "balcount" : 2,
-    "additional" :
-    [
-      "котельная",
-      "кабинет"
-    ],
-    "renderpic" : "/projects/images/prj-rend-small-1.jpg"
-  },
-  "4" :
-  {
-    "id" : 4,
-    "name" : "фокус",
-    "title" : "Эскизный проект жилого дома",
-    "description" : "Полное описание проекта ещё в разработке",
-    "artic" : "GLF-224",
-    "matvol" : "",
-    "tsquare" : 224,
-    "terrsquare" : 9.8,
-    "wccount" : 4,
-    "bedcount" : 4,
-    "balcount" : 2,
-    "additional" :
-    [
-      "котельная"
-    ],
-    "renderpic" : "/projects/images/prj-rend-small-23.jpg"
-  },
-  "2" :
   {
     "id" : 5,
     "name" : "Дружба",
@@ -92,7 +56,64 @@
     ],
     "renderpic" : "/projects/images/prj-rend-small-24.jpg"
   },
+  "4" :
+  {
+    "id" : 3,
+    "name" : "Темза",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GLF-288",
+    "matvol" : "",
+    "tsquare" : 288,
+    "terrsquare" : 63,
+    "wccount" : 3,
+    "bedcount" : 3,
+    "balcount" : 2,
+    "additional" :
+    [
+      "котельная",
+      "кабинет"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-1.jpg"
+  },
+  "5" :
+  {
+    "id" : 4,
+    "name" : "фокус",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GLF-224",
+    "matvol" : "",
+    "tsquare" : 224,
+    "terrsquare" : 9.8,
+    "wccount" : 4,
+    "bedcount" : 4,
+    "balcount" : 2,
+    "additional" :
+    [
+      "котельная"
+    ],
+    "renderpic" : "/projects/images/prj-rend-small-23.jpg"
+  },
   "6" :
+  {
+    "id" : 2,
+    "name" : "Озёрный",
+    "title" : "Эскизный проект жилого дома",
+    "description" : "Полное описание проекта ещё в разработке",
+    "artic" : "GLF-333",
+    "matvol" : "",
+    "tsquare" : 333,
+    "terrsquare" : "-;",
+    "wccount" : "-",
+    "bedcount" : "-",
+    "balcount" : "-",
+    "additional" : "-",
+    "renderpic" : "/projects/images/prj-rend-small-0.jpg"
+  },
+
+
+  "25" :
   {
     "id" : 6,
     "name" : "Наталия",

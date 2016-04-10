@@ -1,4 +1,4 @@
-angular.module('cloverApp', []).
+angular.module('cloverApp', ['ngDialog']).
 	directive('onLastRepeat', function() {
 		return function(scope, element, attrs) {
 			if (scope.$last) setTimeout(function(){
@@ -9,8 +9,9 @@ angular.module('cloverApp', []).
 
 
 
-	.controller('ProjectsController', function($scope, $http){
+	.controller('ProjectsController', function($scope, $http, ngDialog){
 		$scope.projects = [];
+		$scope.prj = [];
 		$scope.$on('onRepeatLast', function(scope, element, attrs){
 			console.log("projects  carousel html structure loaded");
 			var swiper = new Swiper('.swiper-container', {
@@ -40,11 +41,16 @@ angular.module('cloverApp', []).
 		$http.get('../projects/projectsdb.json')
 			.success(function(data){
 				$scope.projects = data;
+
 			});
 
 		$scope.showProjectInfo = function(project){
-			console.log("получено значение: " + project);
-
+			$scope.prj = $scope.projects[project];
+			console.log("получено значение: " + $scope.prj['name']);
+			ngDialog.open({
+				template: 'projectInfoWrapper',
+				scope: $scope
+			});
 		};
 	});
 

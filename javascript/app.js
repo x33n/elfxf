@@ -9,10 +9,10 @@ angular.module('cloverApp', []).
 
 
 
-	.controller('ProjectsController', function($scope,  $http){
+	.controller('ProjectsController', function($scope, $http){
 		$scope.projects = [];
 		$scope.$on('onRepeatLast', function(scope, element, attrs){
-			console.log("projects loaded");
+			console.log("projects  carousel html structure loaded");
 			var swiper = new Swiper('.swiper-container', {
 				pagination: '.swiper-pagination',
 				//setWrapperSize: true,

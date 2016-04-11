@@ -222,8 +222,11 @@
 	</div>
 
 	<script type="text/ng-template" id="projectInfoWrapper">
-		<h1>ИНформация о проекте</h1>
-		<p>{{prj['name']}}</p>
+		<div class="overlay overlay-contentscale">
+			<p>{{prj['name']}}</p>
+			<img ng-src="{{prj['renderpic']}}" alt="">
+		</div>
+
 
 	</script>
 </section>

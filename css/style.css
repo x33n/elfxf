@@ -181,11 +181,18 @@ body, section {
 #projects .swiper-slide .btn-projectInfo {
     color: #FF5619;
     text-transform: uppercase;
-   border: 1px solid #FF5619;
+   border: 1px solid #ff5619;
     margin-top: 10px;
+    padding: 7px 23px 5px 23px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
 }
 
+#projects .swiper-slide .btn-projectInfo:hover {
+    background-color: rgba(255, 86, 25, 0.06);
 
+}
 
 
 

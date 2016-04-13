@@ -179,14 +179,14 @@
 	</div>
 
 
-	<div class="swiper-container" ng-controller="ProjectsController">
+	<div class="swiper-container projects-carousel" ng-controller="ProjectsController">
 		<div class="swiper-wrapper">
 			<div  ng-repeat="(k, project) in projects" on-last-repeat class="swiper-slide">
 				<div class="swiper-slide-image">
 					<div class="swiper-slide-tsquare">
 						<span>{{project.tsquare}}м&sup2;</span>
 					</div>
-					<img  ng-src="{{project.renderpic}}"  alt="">
+					<img  ng-src="/projects/images/renders/carousel/{{project['carousel-image']}}"  alt="">
 				</div>
 
 				<div class="swiper-slide-caption">
@@ -205,7 +205,7 @@
 
 						</dl>
 
-						<a href class="btn btn-projectInfo"  ng-click="showProjectInfo(k)" class="trigger-overlay">Подробности</a>
+						<a href class="btn btn-projectInfo"  ng-click="showProjectInfo(k)" class="trigger-overlay">Описание проекта</a>
 					</footer>
 
 				</div>
@@ -223,13 +223,73 @@
 
 	<script type="text/ng-template" id="projectInfoWrapper">
 		<div class="overlay overlay-contentscale">
-			<p>{{prj['name']}}</p>
-			<img ng-src="{{prj['renderpic']}}" alt="">
+<div class="ngdialog-close"></div>
+				<div id="project-details" class="row">
+
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-details-left">
+
+							<h3>{{prj['artic']}}</h3>
+
+						<div class="swiper-container gallery-top">
+							<div class="swiper-wrapper">
+								<div ng-repeat="(i, url) in prj['images']['renders']" on-last-repeat class="swiper-slide" style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
+
+							</div>
+
+							<!--<div class="swiper-button-next"></div>-->
+							<!--<div class="swiper-button-prev"></div>-->
+						</div>
+						<div class="swiper-container gallery-thumbs">
+							<div class="swiper-wrapper">
+
+								<div ng-repeat="(i, url) in prj['images']['renders']" on-last-repeat class="swiper-slide" style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
+							</div>
+						</div>
+					</div>
+
+
+
+						<!-- TAB NAVIGATION -->
+
+
+
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-details-right">
+
+						<ul class="nav nav-tabs" role="tablist">
+							<li ng-repeat="(f, floor) in prj['floors']"  class={{(f==1)?"active":""}}>
+							<a href="#tab{{f}}" role="tab" data-toggle="tab"><span>{{f}}</span> этаж</a>
+							</li>
+
+						</ul>
+						<!-- TAB CONTENT -->
+						<div class="tab-content">
+							<div ng-repeat="(f, floor) in prj['floors']" class="{{(f==1 ) ? 'active' : ''}} tab-pane fade in" id="tab{{f}}">
+							<div ng-repeat="(room, sqare) in floor">
+								<dt>{{room}}</dt><dd>{{sqare}}м&sup2;</dd>
+
+							</div>
+						</div>
+
+					</div>
+						<!--div ng-repeat="(f, floor) in prj['floors']">
+							<h3>{{f}} этаж</h3>
+
+							<div ng-repeat="(room, sqare) in floor">
+								<dt>{{room}}</dt><dd>{{sqare}}м&sup2;</dd>
+
+							</div-->
+
+						</div>
+					</div>
+
+			</div>
+
+
 
 		</div>
+</script>
 
 
-	</script>
 </section>
 
 <section id="par_iwant" data-type="background" data-speed="2" >

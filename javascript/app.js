@@ -14,7 +14,7 @@ angular.module('cloverApp', ['ngDialog']).
 		$scope.prj = [];
 		$scope.$on('onRepeatLast', function(scope, element, attrs){
 			console.log("projects  carousel html structure loaded");
-			var swiper = new Swiper('.swiper-container', {
+			var swiper = new Swiper('.projects-carousel', {
 				pagination: '.swiper-pagination',
 				//setWrapperSize: true,
 				slidesPerView: 'auto',
@@ -36,9 +36,26 @@ angular.module('cloverApp', ['ngDialog']).
 
 			});
 
+			var galleryTop = new Swiper('.gallery-top', {
+				spaceBetween: 10,
+
+
+			});
+			var galleryThumbs = new Swiper('.gallery-thumbs', {
+				initialSlide: 0,
+				spaceBetween: 10,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				touchRatio: 0.2,
+				slideToClickedSlide: true
+
+			});
+			galleryTop.params.control = galleryThumbs;
+			galleryThumbs.params.control = galleryTop;
+
 		});
 
-		$http.get('../projects/projectsdb.json')
+		$http.get('../projects/projectsdb-new.json')
 			.success(function(data){
 				$scope.projects = data;
 

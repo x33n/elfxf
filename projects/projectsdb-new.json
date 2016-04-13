@@ -194,9 +194,9 @@
       "renders": {
         "1": "1-1.jpg",
         "2": "1-2.jpg",
-        "3": "1-3.jpg",
-        "4": "1-4.jpg",
-        "5": "1-5.jpg"
+        "3": "1-2.jpg",
+        "4": "1-2.jpg",
+        "5": "1-2.jpg"
       }
     }
   },
@@ -252,29 +252,10 @@
     "artic": "GLF-333",
     "floors": {
       "1": {
-        "Тамбур": "3.4",
-        "Гардероб": "10.5",
-        "Холл": "15.0",
-        "Гостиная": "38.7",
-        "Спальня": "14.8",
-        "Сан.узел": "3.1",
-        "Кинотеатр": "12.1",
-        "Котельная": "11.6",
-        "Кухня-столовая": "31.8",
-        "Хоз.блок": "23.2",
-        "Терраса": "28.7"
+        "": ""
       },
       "2": {
-        "Холл": "18.5",
-        "Спальня": "25.6",
-        "Сан.узел": "25.5",
-        "Гардероб": "43.5",
-        "Тамбур": "4.2",
-        "Гараж": "43.5",
-        "Балкон": "2.9"
-      },
-      "3": {
-        "Мансарда": "93.5"
+        "": ""
       }
     },
     "matvol": "",
@@ -287,13 +268,570 @@
     "carousel-image": "prj-rend-small-0.jpg",
     "images": {
       "renders": {
-        "1": "25-1.jpg",
-        "2": "25-2.jpg",
-        "3": "25-2.jpg",
-        "4": "25-2.jpg",
-        "5": "25-2.jpg"
+        "1": "0-1.jpg",
+        "2": "0-2.jpg"
+      }
+    }
+  },
+  "7": {
+    "id": 7,
+    "name": "Юлия",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-116",
+    "floors": {
+      "1": {
+        "Холл": 5.9,
+        "Спальная": 16.1
+      },
+      "2": {
+        "Прихожая": 3.5,
+        "Холл": 8.7,
+        "Хоз.помещение": 3.5,
+        "Санузел": 7.5,
+        "Кухня-столовая": 14.3,
+        "Гостиная": 16.1,
+        "Веранда": 10.9
+      }
+    },
+    "matvol": 51.9,
+    "tsquare": 116.4,
+    "terrsquare": 10.9,
+    "wccount": 1,
+    "bedcount": 3,
+    "balcount": 0,
+    "additional": [
+      "хозпомещение"
+    ],
+    "carousel-image": "prj-rend-small-6.jpg",
+    "images": {
+      "renders": {
+        "1": "6-1.jpg"
+      }
+    }
+  },
+  "8": {
+    "id": 8,
+    "name": "Александр",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-117",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 60,
+    "tsquare": 117,
+    "terrsquare": 13.1,
+    "wccount": 1,
+    "bedcount": 2,
+    "balcount": 1,
+    "additional": "",
+    "carousel-image": "prj-rend-small-7.jpg",
+    "images": {
+      "renders": {
+        "1": "7-1.jpg"
+      }
+    }
+  },
+  "9": {
+    "id": 9,
+    "name": "Ольга",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-121",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 61,
+    "tsquare": 121,
+    "terrsquare": 5.9,
+    "wccount": 2,
+    "bedcount": 3,
+    "balcount": 0,
+    "additional": [
+      "котельная"
+    ],
+    "carousel-image": "prj-rend-small-8.jpg",
+    "images": {
+      "renders": {
+        "1": "8-1.jpg"
+      }
+    }
+  },
+  "10": {
+    "id": 10,
+    "name": "Марсель",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-148",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 78,
+    "tsquare": 148,
+    "terrsquare": 6.6,
+    "wccount": 2,
+    "bedcount": 3,
+    "balcount": 1,
+    "additional": [
+      "бойлерная"
+    ],
+    "carousel-image": "prj-rend-small-9.jpg",
+    "images": {
+      "renders": {
+        "1": "9-1.jpg"
+      }
+    }
+  },
+  "11": {
+    "id": 11,
+    "name": "Виталий",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-158",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 105,
+    "tsquare": 158,
+    "terrsquare": 11.8,
+    "wccount": 1,
+    "bedcount": 2,
+    "balcount": 0,
+    "additional": [
+      "бойлерная"
+    ],
+    "carousel-image": "prj-rend-small-10.jpg",
+    "images": {
+      "renders": {
+        "1": "10-1.jpg"
+      }
+    }
+  },
+  "12": {
+    "id": 12,
+    "name": "Татьяна",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-167",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 80,
+    "tsquare": 167,
+    "terrsquare": 14.4,
+    "wccount": 2,
+    "bedcount": 3,
+    "balcount": 2,
+    "additional": [
+      "кабинет",
+      "комната отдыха",
+      "кладовая"
+    ],
+    "carousel-image": "prj-rend-small-11.jpg",
+    "images": {
+      "renders": {
+        "1": "11-1.jpg"
+      }
+    }
+  },
+  "13": {
+    "id": 13,
+    "name": "Афина",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-190",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 98,
+    "tsquare": 190,
+    "terrsquare": 6.6,
+    "wccount": 2,
+    "bedcount": 2,
+    "balcount": 0,
+    "additional": [
+      "котельная",
+      "гардероб",
+      "моечная",
+      "парилка"
+    ],
+    "carousel-image": "prj-rend-small-12.jpg",
+    "images": {
+      "renders": {
+        "1": "12-1.jpg"
+      }
+    }
+  },
+  "14": {
+    "id": 14,
+    "name": "Руслан",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-197",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 110,
+    "tsquare": 197,
+    "terrsquare": 9.3,
+    "wccount": 1,
+    "bedcount": 6,
+    "balcount": 0,
+    "additional": [
+      "бойлерная",
+      "душевая"
+    ],
+    "carousel-image": "prj-rend-small-13.jpg",
+    "images": {
+      "renders": {
+        "1": "13-1.jpg"
+      }
+    }
+  },
+  "15": {
+    "id": 15,
+    "name": "Михаил",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-201",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 98,
+    "tsquare": 201,
+    "terrsquare": 7,
+    "wccount": 2,
+    "bedcount": 3,
+    "balcount": 0,
+    "additional": [
+      "душевая",
+      "второй свет",
+      "парилка",
+      "моечная"
+    ],
+    "carousel-image": "prj-rend-small-14.jpg",
+    "images": {
+      "renders": {
+        "1": "14-1.jpg"
+      }
+    }
+  },
+  "16": {
+    "id": 16,
+    "name": "Ярослав",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-214",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 108,
+    "tsquare": 214,
+    "terrsquare": 18.6,
+    "wccount": 1,
+    "bedcount": 3,
+    "balcount": 1,
+    "additional": [
+      "кабинет",
+      "м гостиная со  вторым светос"
+    ],
+    "carousel-image": "prj-rend-small-15.jpg",
+    "images": {
+      "renders": {
+        "1": "15-1.jpg"
+      }
+    }
+  },
+  "17": {
+    "id": 17,
+    "name": "Афродита",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-225",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 85,
+    "tsquare": 225,
+    "terrsquare": 30.1,
+    "wccount": 3,
+    "bedcount": 3,
+    "balcount": 0,
+    "additional": [
+      "кабинет",
+      "котельная"
+    ],
+    "carousel-image": "prj-rend-small-16.jpg",
+    "images": {
+      "renders": {
+        "1": "16-1.jpg"
+      }
+    }
+  },
+  "18": {
+    "id": 18,
+    "name": "Екатерина",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": " GT-227",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 100,
+    "tsquare": 227,
+    "terrsquare": 93.3,
+    "wccount": 1,
+    "bedcount": 3,
+    "balcount": 1,
+    "additional": [
+      "бойлерная"
+    ],
+    "carousel-image": "prj-rend-small-17.jpg",
+    "images": {
+      "renders": {
+        "1": "17-1.jpg"
+      }
+    }
+  },
+  "19": {
+    "id": 19,
+    "name": "Лилия",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-256",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 95,
+    "tsquare": 256,
+    "terrsquare": 43,
+    "wccount": 2,
+    "bedcount": 3,
+    "balcount": 1,
+    "additional": [
+      "бассейн",
+      "душевая",
+      "тех.помещение",
+      "котельная",
+      "кладовая",
+      "второй свет"
+    ],
+    "carousel-image": "prj-rend-small-18.jpg",
+    "images": {
+      "renders": {
+        "1": "18-1.jpg"
+      }
+    }
+  },
+  "20": {
+    "id": 20,
+    "name": "Олеся",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-326",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": "",
+    "tsquare": 326,
+    "terrsquare": "-",
+    "wccount": 4,
+    "bedcount": 8,
+    "balcount": 0,
+    "additional": [
+      "Двухквартирный дом",
+      "2 душевых",
+      "2 котельных",
+      "2 террасы зеркально."
+    ],
+    "carousel-image": "prj-rend-small-19.jpg",
+    "images": {
+      "renders": {
+        "1": "6-19.jpg"
+      }
+    }
+  },
+  "21": {
+    "id": 21,
+    "name": "Владимир",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-490",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 240,
+    "tsquare": 490,
+    "terrsquare": "-",
+    "wccount": "-",
+    "bedcount": "-",
+    "balcount": "-",
+    "additional": "-",
+    "carousel-image": "prj-rend-small-20.jpg",
+    "images": {
+      "renders": {
+        "1": "20-1.jpg"
+      }
+    }
+  },
+  "22": {
+    "id": 22,
+    "name": "Евгений",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-500",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 360,
+    "tsquare": 500,
+    "terrsquare": "-",
+    "wccount": "-",
+    "bedcount": "-",
+    "balcount": "-",
+    "additional": "-",
+    "carousel-image": "prj-rend-small-21.jpg",
+    "images": {
+      "renders": {
+        "1": "21-1.jpg"
+      }
+    }
+  },
+  "23": {
+    "id": 23,
+    "name": "Леонид",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-80",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 43,
+    "tsquare": 80,
+    "terrsquare": 32.9,
+    "wccount": 1,
+    "bedcount": 1,
+    "balcount": 0,
+    "additional": [
+      "тамбур"
+    ],
+    "carousel-image": "prj-rend-small-3.jpg",
+    "images": {
+      "renders": {
+        "1": "3-1.jpg"
+      }
+    }
+  },
+  "24": {
+    "id": 5,
+    "name": "Диана",
+    "title": "Эскизный проект жилого дома",
+    "description": "Полное описание проекта ещё в разработке",
+    "artic": "GT-108",
+    "floors": {
+      "1": {
+        "": ""
+      },
+      "2": {
+        "": ""
+      }
+    },
+    "matvol": 60,
+    "tsquare": 108,
+    "terrsquare": 13.6,
+    "wccount": 2,
+    "bedcount": 3,
+    "balcount": 0,
+    "additional": [
+      "душевая",
+      "парилка"
+    ],
+    "carousel-image": "prj-rend-small-4.jpg",
+    "images": {
+      "renders": {
+        "1": "4-1.jpg"
       }
     }
   }
-
 }

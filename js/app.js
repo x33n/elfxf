@@ -7,9 +7,11 @@ angular.module('cloverApp', ['ngDialog']).
 		};
 })
 
+	.config(function (ngDialogProvider) {
+		ngDialogProvider.setForceHtmlReload(true);
+	})
 
-
-	.controller('ProjectsController', function($scope, $http, ngDialog){
+	.controller('ProjectsController', function($scope, $http, $q, ngDialog){
 		$scope.projects = [];
 		$scope.prj = [];
 		$scope.$on('onRepeatLast', function(scope, element, attrs){
@@ -27,7 +29,7 @@ angular.module('cloverApp', ['ngDialog']).
 				speed: 400,
 				grabCursor: true,
 				initialSlide: 1,
-				preloadImages: false,
+
 				//autoplay: 5000,
 				slideToClickedSlide: true,
 				lazyLoading: false,
@@ -36,22 +38,6 @@ angular.module('cloverApp', ['ngDialog']).
 
 			});
 
-			var galleryTop = new Swiper('.gallery-top', {
-				spaceBetween: 10,
-
-
-			});
-			var galleryThumbs = new Swiper('.gallery-thumbs', {
-				initialSlide: 0,
-				spaceBetween: 10,
-				centeredSlides: true,
-				slidesPerView: 'auto',
-				touchRatio: 0.2,
-				slideToClickedSlide: true
-
-			});
-			galleryTop.params.control = galleryThumbs;
-			galleryThumbs.params.control = galleryTop;
 
 		});
 
@@ -65,10 +51,30 @@ angular.module('cloverApp', ['ngDialog']).
 			$scope.prj = $scope.projects[project];
 			console.log("получено значение: " + $scope.prj['name']);
 			ngDialog.open({
-				template: 'projectInfoWrapper',
+				template: '../templates/pages/projects/projectinfo.html',
 				scope: $scope
-			});
-		};
+			}).then(setTimeout(function(){
+				var galleryTop = new Swiper('.gallery-top', {
+					spaceBetween: 10,
+					preloadImages: false
+				});
+				var galleryThumbs = new Swiper('.gallery-thumbs', {
+					initialSlide: 0,
+					spaceBetween: 10,
+					centeredSlides: true,
+					slidesPerView: 'auto',
+					touchRatio: 0.2,
+					preloadImages: false,
+					slideToClickedSlide: true
+				});
+				galleryTop.params.control = galleryThumbs;
+				galleryThumbs.params.control = galleryTop;
+			}, 1000));
+
+
+			};
+
+
 	});
 
 

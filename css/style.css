@@ -497,6 +497,10 @@ nav li a:hover, nav li a:focus, nav li a:active {
     font-weight: 300;
 }
 
+#contacts {
+    background-color: #82B541;
+}
+
 #greenContacts {
     background-color: #82B541;
     padding-bottom: 30px;
@@ -723,6 +727,10 @@ h3 small {
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     border: 2px solid #82B541;
+}
+
+.servpic {
+  margin: 0 auto;
 }
 
 .btn-allserv:hover {

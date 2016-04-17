@@ -2,6 +2,11 @@ body, section {
     min-width: 320px;
 }
 
+a:focus {
+    outline: none!important;
+}
+
+
 #bgMain {
     background: url('../images/bg_main_2.jpg') no-repeat fixed center top;
     text-align: center;
@@ -340,8 +345,22 @@ body, section {
     line-height: 14px;
 }
 
-#headerPhone a:hover {
+
+
+#headerPhone a span {
+    font-size: 14px;
+    text-transform: none;
+    padding: 0;
+    margin-right: 5px;
     border-bottom: 1px dotted #fff;
+    line-height: 17px;
+    font-weight: 300;
+}
+
+
+#headerPhone a:hover span {
+
+
 }
 
 #headerPhone img {
@@ -905,6 +924,7 @@ h3 small {
 
     #bgMain h2 {
         font-size: 50px;
+        line-height: 65px;
     }
 
     #bgMain h3 {
@@ -938,6 +958,7 @@ h3 small {
 
     #bgMain h2 {
         font-size: 50px;
+        line-height: 65px;
     }
 
     #bgMain h3 {

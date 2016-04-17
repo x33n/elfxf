@@ -51,8 +51,7 @@ angular.module('cloverApp', ['ngDialog']).
 			$scope.prj = $scope.projects[project];
 			console.log("получено значение: " + $scope.prj['name']);
 			ngDialog.open({
-				template: '../templates/pages/projects/projectinfo.html',
-				scope: $scope
+				template: '../templates/pages/projects/projectinfo.html'
 			}).then(setTimeout(function(){
 				var galleryTop = new Swiper('.gallery-top', {
 					spaceBetween: 10,
@@ -75,6 +74,45 @@ angular.module('cloverApp', ['ngDialog']).
 			};
 
 
+
+	})
+	.controller('CallbackFormController', function ($scope, $http, ngDialog) {
+		// initializing form
+		$scope.form = {
+			client: "",
+			phone: "",
+			time: ""
+		};
+		$scope.orderCall = function () {
+			ngDialog.open({
+				template: '/templates/forms/callback.html',
+				scope: $scope
+			})
+		};
+			// submit form
+		$scope.submitForm = function (form) {
+			// passing value to variable
+			var callForm = {
+				client: form.client,
+				phone: form.phone,
+				time: form.time
+			};
+			if (callForm.client === "" || callForm.phone === "" || callForm.time === "") {
+				alert("Остались незаполненные поля");
+			}
+		};
+		// reset form
+		$scope.resetForm = function () {
+			$scope.form = {
+				client: "",
+				phone: "",
+				time: ""
+			}
+
+		};
 	});
+
+
+
 
 

@@ -106,11 +106,11 @@
                     </ul>
 
                     <div class="navbar-right hidden-sm hidden-xs">
-                        <div id="headerPhone">
+                        <div  ng-controller="CallbackFormController"  id="headerPhone" >
 
                             <img src="/images/header_phone.png" alt="">
                             <span>+7 915 010 4940</span>
-                            <a href="#callback-form">заказать  звонок</a>
+                            <a href ng-click="orderCall()" class="trigger-overlay"><span>заказать  звонок</span></a>
 
 
 
@@ -124,7 +124,9 @@
         </nav>
         <div class="container" id="main_capt">
 
-            <div><h2 style="">Элитные дома из клеёного бруса<br>
+            <div>
+                <div class="clearfix"></div>
+                <h2>Элитные дома из клеёного бруса<br>
 
                  по технологии Фахверк
                 <div class="text-center hdivider" style="    margin: 23px auto 20px auto;"></div>
@@ -230,7 +232,6 @@
                 <div class="swiper-slide-caption">
                     <header style="background-color: rgb(158, 165, 159);">
                         <h3>Дом {{project.artic}}
-                            <small>(пр. "{{project.name}}")</small>
                         </h3>
                         <h4>{{project.title}}</h4>
                     </header>

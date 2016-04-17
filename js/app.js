@@ -86,30 +86,29 @@ angular.module('cloverApp', ['ngDialog']).
 		$scope.orderCall = function () {
 			ngDialog.open({
 				template: '/templates/forms/callback.html',
+				className: 'ngdialog-theme-flat',
 				scope: $scope
-			})
+			});
+			var inputTime = $('#inputTime').clockpicker({
+				placement: 'bottom',
+				align: 'left',
+				autoclose: true,
+				'default': 'now'
+			});
 		};
+
 			// submit form
 		$scope.submitForm = function (form) {
 			// passing value to variable
 			var callForm = {
 				client: form.client,
-				phone: form.phone,
-				time: form.time
+				phone: form.phone
 			};
-			if (callForm.client === "" || callForm.phone === "" || callForm.time === "") {
-				alert("Остались незаполненные поля");
+			if (callForm.client === "") {
+				callForm.client = "Не указано";
 			}
 		};
-		// reset form
-		$scope.resetForm = function () {
-			$scope.form = {
-				client: "",
-				phone: "",
-				time: ""
-			}
 
-		};
 	});
 
 

@@ -49,16 +49,17 @@
     </noscript><!-- /Yandex.Metrika counter -->
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/plugins/clockpicker-gh-pages/dist/bootstrap-clockpicker.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500|Roboto+Condensed:400,300,700&subset=latin,cyrillic" rel="stylesheet">
 
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
     <!--<link href="/feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css" />-->
     <!--<link href="/feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css" />-->
     <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css">
-    <!--<link rel="stylesheet" href="/css/style8.css" type="text/css"/>-->
     <link rel="stylesheet" href="/css/ngDialog.css">
     <link rel="stylesheet" href="/css/ngDialog-theme-default.css">
     <link rel="stylesheet" href="/css/ngDialog-theme-flat.css">
+
     <!-- main styles -->
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
 </head>
@@ -69,7 +70,7 @@
     <div class='parallax' id="bgMain" data-type="background" data-speed="100">
         <nav class="navbar navbar-default container-fluid " role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="container">
+            <div   ng-controller="CallbackFormController"  class="container" >
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse"
                             data-target=".navbar-ex1-collapse">
@@ -86,7 +87,7 @@
                     <div id="headerPhone" class="hidden-md hidden-lg">
 
                         <img src="/images/header_phone.png" alt="">
-                        <span>+7 915-010-4940</span>
+                        <span ng-click="orderCall()" >+7 915-010-4940</span>
 
 
                     </div>
@@ -106,7 +107,7 @@
                     </ul>
 
                     <div class="navbar-right hidden-sm hidden-xs">
-                        <div  ng-controller="CallbackFormController"  id="headerPhone" >
+                        <div id="headerPhone" >
 
                             <img src="/images/header_phone.png" alt="">
                             <span>+7 915 010 4940</span>
@@ -700,6 +701,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <!-- Bootstrap JavaScript -->
 <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/plugins/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.js"></script>
 <script type="text/javascript" src="/js/scroll.js"></script>
 
 <!--<script src="js/demo7.js"></script>-->

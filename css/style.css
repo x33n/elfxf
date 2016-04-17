@@ -7,6 +7,25 @@ a:focus {
 }
 
 
+#mainScreen .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 6px 10px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+    width: 24px;
+    height: 1px;
+background-color: rgba(255, 255, 255, 0.6);;
+}
+
 #bgMain {
     background: url('../images/bg_main_2.jpg') no-repeat fixed center top;
     text-align: center;
@@ -35,6 +54,7 @@ a:focus {
     font-weight: 100;
     font-size: 30px;
     margin-bottom: 33px;
+
 }
 
 .hs1 {
@@ -372,6 +392,34 @@ a:focus {
 
 }
 
+
+#form-callback h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-left: 3px solid rgb(130, 181, 65);
+    padding-left: 10px;
+}
+
+.form-control {
+    height: 40px;
+
+}
+
+
+.form-control:focus {
+    border-color: #82B541;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(130, 181, 65, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(130, 181, 65, 0.6);
+}
+
+input[type="text"].form-control {
+    padding: 6px 13px!important;
+    font-size: 17px!important;
+}
+
+
+
 #projects {
     background-color: #F5F5F5;
     padding-bottom: 70px;
@@ -466,6 +514,13 @@ nav li a:hover, nav li a:focus, nav li a:active {
     font-size: 15px;
 }
 
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0!important;
+
+}
+
+
 .btn-ord {
     border: 2px solid #fff;
     border-radius: 50px;
@@ -501,6 +556,35 @@ nav li a:hover, nav li a:focus, nav li a:active {
     font-weight: 400;
     padding: 10px 30px;
 }
+
+.btn-send {
+    color: #fff;
+    border: 2px solid #82B541;
+    background-color: #82B541;
+    margin-top: 40px;
+    font-size: 23px;
+    padding: 9px 23px 7px 23px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    font-family: "Roboto Condensed";
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-send:hover {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12),
+    0 5px 5px -3px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.btn-send:focus, .btn-send:active {
+    color: #fff;;
+}
+
 
 #big_one {
     padding-bottom: 60px
@@ -824,8 +908,11 @@ h3 small {
 
     #headerPhone span {
         padding-top: 5px;
+        font-family: "Roboto Condensed";
         font-size: 13px;
-        float: right;
+
+        display: block;
+        clear: both;
 
     }
 

@@ -1,29 +1,39 @@
-<div class="overlay overlay-contentscale">
+<div class="overlay overlay-contentscale" id="form-callback">
     <div class="ngdialog-close"></div>
     <div class="row">
+
+
+
         <form>
-            <div class="form-group">
-                <label for="Ваше имя" class="col-sm-2 control-label">Ваше имя</label>
-                <div class="col-sm-10">
-                    <input type="text" name="clientName" ng-model="form.client" class="form-control" id="Ваше имя" placeholder="Ваше имя">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="phone" class="col-sm-2 control-label">Phone</label>
-                <div class="col-sm-10">
-                    <input type="text" name="clientPhone" ng-model="form.phone" class="form-control" id="phone" placeholder="Phone">
-                </div>
+            <h3>Обратный звонок</h3>
+
+            <div class="form-group" style="margin-bottom: 12px">
+                <input type="text" name="clientName" ng-model="form.client" class="form-control" id="Ваше имя"
+                       placeholder="Ваше имя">
             </div>
 
             <div class="form-group">
-                <label for="calltime" class="col-sm-2 control-label">Calltime</label>
-                <div class="col-sm-10">
-                    <input type="time" name="callTime" ng-model="form.time" class="form-control" id="calltime" placeholder="Calltime">
-                </div>
+
+                <input type="text" name="clientPhone" ng-model="form.phone" class="form-control" id="phone"
+                       placeholder="Номер телефона" required>
+
             </div>
-            <input type="submit" value="Отрпавить" ng-click="submitForm(form)">
-            <input type="submit" value="Закрыть" ng-click="resetForm()">
+
+
+
+
+
+                <div class="form-group" style="margin-bottom: 0">
+
+                        <button type="submit" ng-click="submitForm(form)" class="btn btn-send btn-block">Жду звонка</button>
+
+                </div>
+
+
 
         </form>
+
     </div>
 </div>
+
+

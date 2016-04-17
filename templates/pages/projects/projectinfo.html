@@ -8,8 +8,7 @@
 
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
-                    <div ng-repeat="(i, url) in prj['images']['renders']" class="swiper-slide"
-                         style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
+                    <div ng-repeat="(i, url) in prj['images']['renders']" class="swiper-slide" style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
 
                 </div>
 
@@ -19,7 +18,7 @@
             <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
 
-                    <div ng-repeat="(i, url) in prj['images']['renders']" class="swiper-slide"
+                    <div ng-repeat="(i, url) in prj['images']['renders']"  on-lastest-repeat class="swiper-slide"
                          style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
                 </div>
             </div>

@@ -1,63 +1,66 @@
 <div class="overlay overlay-contentscale">
     <div class="ngdialog-close"></div>
-    <div id="project-details" class="row">
+    <div class="">
+        <div id="project-details" class="row">
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-details-left">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-details-left">
 
-            <h3>{{prj['artic']}}</h3>
+                <h3>{{prj['artic']}}</h3>
 
-            <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                    <div ng-repeat="(i, url) in prj['images']['renders']" class="swiper-slide" style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
-
-                </div>
-
-                <!--<div class="swiper-button-next"></div>-->
-                <!--<div class="swiper-button-prev"></div>-->
-            </div>
-            <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-
-                    <div ng-repeat="(i, url) in prj['images']['renders']"  on-lastest-repeat class="swiper-slide"
-                         style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- TAB NAVIGATION -->
-
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-details-right">
-
-            <ul class="nav nav-tabs" role="tablist">
-                <li ng-repeat="(f, floor) in prj['floors']" class={{(f==1)?"active":""}}>
-                    <a href="#tab{{f}}" role="tab" data-toggle="tab"><span>{{f}}</span> этаж</a>
-                </li>
-
-            </ul>
-            <!-- TAB CONTENT -->
-            <div class="tab-content">
-                <div ng-repeat="(f, floor) in prj['floors']" class="{{(f==1 ) ? 'active' : ''}} tab-pane fade in"
-                     id="tab{{f}}">
-                    <div ng-repeat="(room, sqare) in floor">
-                        <dt>{{room}}</dt>
-                        <dd>{{sqare}}м&sup2;</dd>
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div ng-repeat="(i, url) in prj['images']['renders']" class="swiper-slide" style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
 
                     </div>
+
+                    <!--<div class="swiper-button-next"></div>-->
+                    <!--<div class="swiper-button-prev"></div>-->
                 </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+
+                        <div ng-repeat="(i, url) in prj['images']['renders']"  on-lastest-repeat class="swiper-slide"
+                             style="background-image:url(/projects/images/renders/marked/{{url}})"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TAB NAVIGATION -->
+
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-details-right">
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li ng-repeat="(f, floor) in prj['floors']" class={{(f==1)?"active":""}}>
+                        <a href="#tab{{f}}" role="tab" data-toggle="tab"><span>{{f}}</span> этаж</a>
+                    </li>
+
+                </ul>
+                <!-- TAB CONTENT -->
+                <div class="tab-content">
+                    <div ng-repeat="(f, floor) in prj['floors']" class="{{(f==1 ) ? 'active' : ''}} tab-pane fade in"
+                         id="tab{{f}}">
+                        <div ng-repeat="(room, sqare) in floor">
+                            <dt>{{room}}</dt>
+                            <dd>{{sqare}}м&sup2;</dd>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--div ng-repeat="(f, floor) in prj['floors']">
+                <h3>{{f}} этаж</h3>
+
+                <div ng-repeat="(room, sqare) in floor">
+                <dt>{{room}}</dt><dd>{{sqare}}м&sup2;</dd>
+
+                </div-->
 
             </div>
-            <!--div ng-repeat="(f, floor) in prj['floors']">
-            <h3>{{f}} этаж</h3>
-
-            <div ng-repeat="(room, sqare) in floor">
-            <dt>{{room}}</dt><dd>{{sqare}}м&sup2;</dd>
-
-            </div-->
-
         </div>
     </div>
+
 
 </div>
 

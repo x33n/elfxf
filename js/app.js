@@ -40,18 +40,13 @@ angular.module('cloverApp', ['ngDialog'])
                 lazyLoading: false,
                 lazyLoadingInPrevNextAmount: 5,
                 lazyLoadingOnTransitionStart: true
-
             });
-
-
         });
-
         $http.get('../projects/projectsdb-new.json')
             .success(function (data) {
                 $scope.projects = data;
 
             });
-
         $scope.showProjectInfo = function (project) {
             $scope.prj = $scope.projects[project];
             console.log("получено значение: " + $scope.prj['name']);
@@ -59,11 +54,11 @@ angular.module('cloverApp', ['ngDialog'])
                 template: '../templates/pages/projects/projectinfo.html',
                 scope: $scope
             });
-            $scope.$on('onRepeatLast', function (scope, element, attrs) {
+            $scope.$on('onRepeatLastest', function (scope, element, attrs) {
 
                 var galleryTop = new Swiper('.gallery-top', {
                     spaceBetween: 10,
-                    preloadImages: false
+                    preloadImages: true
                 });
                 var galleryThumbs = new Swiper('.gallery-thumbs', {
                     initialSlide: 0,
@@ -71,7 +66,7 @@ angular.module('cloverApp', ['ngDialog'])
                     centeredSlides: true,
                     slidesPerView: 'auto',
                     touchRatio: 0.2,
-                    preloadImages: false,
+                    preloadImages: true,
                     slideToClickedSlide: true
                 });
                 galleryTop.params.control = galleryThumbs;
@@ -98,12 +93,7 @@ angular.module('cloverApp', ['ngDialog'])
                 className: 'ngdialog-theme-flat',
                 scope: $scope
             });
-            var inputTime = $('#inputTime').clockpicker({
-                placement: 'bottom',
-                align: 'left',
-                autoclose: true,
-                'default': 'now'
-            });
+
         };
 
 
@@ -112,29 +102,32 @@ angular.module('cloverApp', ['ngDialog'])
             console.log("form submitted");
             // passing value to variable
             var callForm = {
-                client: form.client,
-                phone: form.phone
+                mail: "noreply@kleverudachi.ru",
+                subject: "Посетитель сайта ждёт звонка!",
+                message: "Имя: "+ form.client + "\n" + "Номер телефона: " + form.phone
             };
             if (callForm.client === "") callForm.client = "Не указано";
-            console.log("Имя: " + callForm.client);
-            //$http({
-            //    method: 'POST',
-            //    url: "mail.php",
-            //    data: {
-            //        'email': $scope.form.mail,
-            //        'subject': $scope.form.subject,
-            //        'message': $scope.form.msg
-            //    },
-            //    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-            //}).success(function (data, status, headers, config) {
-            //    $scope.status = status;
-            //    /* for debug mode*/
-            //    $scope.data = data;
-            //}).error(function (data, status, headers, config) {
-            //    $scope.status = status;
-            //    /* for debug mode*/
-            //    $scope.data = data || "Request failed";
-            //});
+            console.log(callForm.message);
+            $http({
+                method: 'POST',
+                url: "mail.php",
+                data: {
+                    'email': callForm.mail,
+                    'subject': callForm.subject,
+                    'message': callForm.message
+                },
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            }).success(function (data, status, headers, config) {
+                $scope.status = status;
+                /* for debug mode*/
+                console.log("Успешно. Статус отправки: " + status);
+                $scope.data = data;
+                console.log("Успешно. Данные: " + data);
+            }).error(function (data, status, headers, config) {
+                $scope.status = status;
+                /* for debug mode*/
+                $scope.data = data || "Request failed";
+            });
         };
     });
 

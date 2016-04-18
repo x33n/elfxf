@@ -62,16 +62,25 @@ angular.module('cloverApp', ['ngDialog'])
                 });
                 var galleryThumbs = new Swiper('.gallery-thumbs', {
                     initialSlide: 0,
-                    spaceBetween: 10,
+                    spaceBetween: 0,
                     centeredSlides: true,
                     slidesPerView: 'auto',
-                    touchRatio: 0.2,
+                    touchRatio: 0.3,
                     preloadImages: true,
                     slideToClickedSlide: true
                 });
                 galleryTop.params.control = galleryThumbs;
                 galleryThumbs.params.control = galleryTop;
                 console.log("Gallery Initiated");
+
+                var wh = jQuery(window).height();
+                var pw = jQuery('.ngdialog-content').height();
+                console.log("window: " + wh);
+                console.log("modal: " + pw);
+                if(wh > pw){
+                    jQuery('.ngdialog-content').css('margin-top', ((wh-pw)/4));
+                }
+
                 });
 
 
@@ -124,6 +133,8 @@ angular.module('cloverApp', ['ngDialog'])
                 $scope.data = data;
                 console.log(data);
                 ngDialog.close();
+                $scope.form.client = "";
+                $scope.form.phone = "";
                 ngDialog.open({
                     template: '<p>Ваша заявка отправлена</p><button ng-click="closeThisDialog()" class="btn btn-send btn-block">ОК</button>',
                     className: 'ngdialog-theme-flat',

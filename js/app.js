@@ -122,7 +122,13 @@ angular.module('cloverApp', ['ngDialog'])
                 /* for debug mode*/
                 console.log("Успешно. Статус отправки: " + status);
                 $scope.data = data;
-                console.log("Успешно. Данные: " + data);
+                console.log(data);
+                ngDialog.close();
+                ngDialog.open({
+                    template: '<p>Ваша заявка отправлена</p><button ng-click="closeThisDialog()" class="btn btn-send btn-block">ОК</button>',
+                    className: 'ngdialog-theme-flat',
+                    plain: true
+                });
             }).error(function (data, status, headers, config) {
                 $scope.status = status;
                 /* for debug mode*/

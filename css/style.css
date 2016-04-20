@@ -535,7 +535,7 @@ nav li a:hover, nav li a:focus, nav li a:active {
 .btn-ord {
     border: 2px solid #fff;
     border-radius: 50px;
-    color: #fff;
+    color: #fff!important;
     background-color: transparent;
     /*background-color: #FF5619;*/
     font-size: 19px;
@@ -548,7 +548,7 @@ nav li a:hover, nav li a:focus, nav li a:active {
     -moz-transition: all 0.3s ease 0s;
 }
 
-.btn-ord:hover {
+.btn-ord:hover  {
     color: #fff;
     border: 2px solid #82B541;
     background-color: #82B541;

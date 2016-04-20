@@ -1,4 +1,4 @@
-angular.module('cloverApp', ['ngDialog'])
+angular.module('cloverApp', ['ngDialog', 'mgo-angular-wizard'])
 
     .directive('onLastRepeat', function () {
         return function (scope, element, attrs) {
@@ -90,7 +90,7 @@ angular.module('cloverApp', ['ngDialog'])
 
     })
     .controller('CallbackFormController', function ($scope, $http, ngDialog) {
-        // initializing form
+
         $scope.form = {
             client: "",
             phone: "",
@@ -109,6 +109,7 @@ angular.module('cloverApp', ['ngDialog'])
 
         $scope.submitForm = function (form) {
             console.log("form submitted");
+
             // passing value to variable
             var callForm = {
                 mail: "noreply@kleverudachi.ru",
@@ -146,5 +147,63 @@ angular.module('cloverApp', ['ngDialog'])
                 $scope.data = data || "Request failed";
             });
         };
+    })
+    .controller('CalculateFormController', function ($scope, $http, ngDialog) {
+        // initializing form
+        $scope.form = {
+            client: "",
+            phone: "",
+            time: ""
+        };
+        $scope.projectCalc = function () {
+            ngDialog.open({
+                template: '/templates/forms/calculate.html',
+                className: 'ngdialog-theme-default',
+                scope: $scope
+            });
+
+        };
+
+
+
+        //$scope.submitForm = function (form) {
+        //    console.log("form submitted");
+        //    // passing value to variable
+        //    var callForm = {
+        //        mail: "noreply@kleverudachi.ru",
+        //        subject: "Посетитель сайта ждёт звонка!",
+        //        message: "Имя: "+ form.client + "\n" + "Номер телефона: " + form.phone
+        //    };
+        //    if (callForm.client === "") callForm.client = "Не указано";
+        //    console.log(callForm.message);
+        //    $http({
+        //        method: 'POST',
+        //        url: "mail.php",
+        //        data: {
+        //            'email': callForm.mail,
+        //            'subject': callForm.subject,
+        //            'message': callForm.message
+        //        },
+        //        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        //    }).success(function (data, status, headers, config) {
+        //        $scope.status = status;
+        //        /* for debug mode*/
+        //        console.log("Успешно. Статус отправки: " + status);
+        //        $scope.data = data;
+        //        console.log(data);
+        //        ngDialog.close();
+        //        $scope.form.client = "";
+        //        $scope.form.phone = "";
+        //        ngDialog.open({
+        //            template: '<p>Ваша заявка отправлена</p><button ng-click="closeThisDialog()" class="btn btn-send btn-block">ОК</button>',
+        //            className: 'ngdialog-theme-flat',
+        //            plain: true
+        //        });
+        //    }).error(function (data, status, headers, config) {
+        //        $scope.status = status;
+        //        /* for debug mode*/
+        //        $scope.data = data || "Request failed";
+        //    });
+        //};
     });
 

@@ -1,14 +1,17 @@
 <div class="overlay overlay-contentscale">
     <div class="ngdialog-close"></div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4">
 
 
-        <wizard on-finish="finishedWizard()">
+
+
+        <wizard on-finish="finishedWizard()" class="row">
             <wz-step title="GeneralParams">
                 <h1>1/3 Основные параметры</h1>
-                <select name="name" id="inputID" class="form-control">
-                    <option value=""> -- Технология --</option>
+                <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4">
+
+
+                <select name="technology" id="technology" class="form-control">
+                    <option value="">-- Технология строительства --</option>
                     <option value="fachwerk">Фахверк</option>
                     <option value="classic">Клеёный брус</option>
                 </select>
@@ -16,7 +19,7 @@
                 <div class="text-right">
                     <input type="submit" wz-next value="Вперёд" />
                 </div>
-
+</div>
             </wz-step>
             <wz-step title="Continuing">
                 <h1>Continuing</h1>
@@ -28,10 +31,10 @@
                 <input type="submit" wz-next value="Finish now" />
             </wz-step>
         </wizard>
-        </div>
 
 
 
-    </div>
+
+
 
 </div>

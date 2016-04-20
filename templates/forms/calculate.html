@@ -7,38 +7,39 @@
             <h1>Композиционно-планировочное решение</h1>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
-                Технология строительства
-                <select name="technology" id="technology" class="form-control">
+                    Технология строительства
+                    <select name="technology" id="technology" class="form-control">
 
-                    <option value="fachwerk">Фахверк(GLF-"Glued Laminated Framing")</option>
-                    <option value="classic">Клеёный профилированный брус</option>
-                </select>
-</div>
+                        <option value="fachwerk">Фахверк(GLF-"Glued Laminated Framing")</option>
+                        <option value="classic">Клеёный профилированный брус</option>
+                    </select>
+                </div>
 
                 <div class="form-group">
                     Ориентировочная площадь объекта
                     <div class="input-group">
-                        <input type="number" min="100" class="form-control" id="totalSquare" placeholder="минимум 100м&sup2;">
+                        <input type="number" min="100" class="form-control" id="totalSquare"
+                               placeholder="минимум 100м&sup2;">
                         <div class="input-group-addon">м&sup2;</div>
                     </div>
                 </div>
                 <div class="form-group">
-                Этажность объекта(включая цокольный и мансардный этажи)
-                <select name="floors" id="floors" class="form-control">
-                    <option value="1 этаж">1 этаж</option>
-                    <option value="2 этажа">2 этажа</option>
-                    <option value="3 этажа">3 этажа</option>
-                </select>
-                        <div class="checkbox">
-                            <label>
-                                <input name="isGroundFloor" type="checkbox"> Цокольный этаж
-                            </label>
-                        </div>
-                <div class="checkbox">
-                    <label>
-                        <input name="isAtticFloor" type="checkbox"> Мансардный этаж
-                    </label>
-                </div>
+                    Этажность объекта(включая цокольный и мансардный этажи)
+                    <select name="floors" id="floors" class="form-control">
+                        <option value="1 этаж">1 этаж</option>
+                        <option value="2 этажа">2 этажа</option>
+                        <option value="3 этажа">3 этажа</option>
+                    </select>
+                    <div class="checkbox">
+                        <label>
+                            <input name="isGroundFloor" type="checkbox"> Цокольный этаж
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input name="isAtticFloor" type="checkbox"> Мансардный этаж
+                        </label>
+                    </div>
                 </div>
 
 
@@ -70,46 +71,53 @@
                 </div>
 
                 <div class="form-group">
-                Тип фундамента
-                <select name="substructureType" id="substructureType" class="form-control">
-                    <option value="Монолитный свайный железобетонный">Монолитный свайный железобетонный </option>
-                    <option value="Перекрытие монолитное железобетонное">Перекрытие монолитное железобетонное</option>
-                    <option value="Монолитный ленточный железобетонный">Монолитный ленточный железобетонный</option>
-                    <option value="Монолитный свайно-ленточный железобетонный">Монолитный свайно-ленточный железобетонный</option>
-                    <option value="Монолитная плита перекрытия на сваях">Монолитная плита перекрытия на сваях</option>
-                </select>
-                    </div>
+                    Тип фундамента
+                    <select name="substructureType" id="substructureType" class="form-control">
+                        <option value="Монолитный свайный железобетонный">Монолитный свайный железобетонный</option>
+                        <option value="Перекрытие монолитное железобетонное">Перекрытие монолитное железобетонное
+                        </option>
+                        <option value="Монолитный ленточный железобетонный">Монолитный ленточный железобетонный</option>
+                        <option value="Монолитный свайно-ленточный железобетонный">Монолитный свайно-ленточный
+                            железобетонный
+                        </option>
+                        <option value="Монолитная плита перекрытия на сваях">Монолитная плита перекрытия на сваях
+                        </option>
+                    </select>
+                </div>
 
                 <div class="form-group">
-                Тип кровли
-                <select name="roofType" id="roofType" class="form-control">
-                    <option value="Плоская с внутренним водосливом">Плоская с внутренним водосливом</option>
-                    <option value="Плоская с внешним водосливом ">Плоская с внешним водосливом</option>
-                    <option value="Скатная ">Скатная</option>
-                </select>
-</div>
+                    Тип кровли
+                    <select name="roofType" id="roofType" class="form-control">
+                        <option value="Плоская с внутренним водосливом">Плоская с внутренним водосливом</option>
+                        <option value="Плоская с внешним водосливом ">Плоская с внешним водосливом</option>
+                        <option value="Скатная ">Скатная</option>
+                    </select>
+                </div>
                 <div class="form-group">
-                Тип кровельного покрытия
-                <select name="roofCoverType" id="roofCoverType" class="form-control">
-                    <option value="Металлочерепица">Металлочерепица </option>
-                    <option value="Мягкая кровля ">Мягкая кровля </option>
-                    <option value="Штучная черепица (натуральная, цементно-песчаная) ">Штучная черепица (натуральная, цементно-песчаная) </option>
-                    <option value="Тростник ">Тростник  </option>
-                    <option value="Сланцевая кровля ">Сланцевая кровля  </option>
-                    <option value="Кровельный металл ">Кровельный металл  </option>
-                    <option value="Мембрана ">Мембрана  </option>
-                </select>
- </div>
+                    Тип кровельного покрытия
+                    <select name="roofCoverType" id="roofCoverType" class="form-control">
+                        <option value="Металлочерепица">Металлочерепица</option>
+                        <option value="Мягкая кровля ">Мягкая кровля</option>
+                        <option value="Штучная черепица (натуральная, цементно-песчаная) ">Штучная черепица
+                            (натуральная, цементно-песчаная)
+                        </option>
+                        <option value="Тростник ">Тростник</option>
+                        <option value="Сланцевая кровля ">Сланцевая кровля</option>
+                        <option value="Кровельный металл ">Кровельный металл</option>
+                        <option value="Мембрана ">Мембрана</option>
+                    </select>
+                </div>
                 <div class="form-group">
-                Окна
-                <select name="windowsType" id="windowsType" class="form-control">
-                    <option value="Пластиковые обычные(белые)">Пластиковые обычные(белые)</option>
-                    <option value="Пластиковые ламинированные">Пластиковые ламинированные</option>
-                    <option value="Деревянные(сосна)">Деревянные(сосна)</option>
-                    <option value="Деревянные(лиственница)">Деревянные(лиственница)</option>
-                    <option value="Деревянные(дуб)">Деревянные(дуб)</option>
-                </select>
-</div>
+                    Окна
+                    <select name="windowsType" id="windowsType" class="form-control">
+                        <!--option value="Безрамное остекление">Безрамное остекление</option-->
+                        <option value="Пластиковые обычные(белые)">Пластиковые обычные(белые)</option>
+                        <option value="Пластиковые ламинированные">Пластиковые ламинированные</option>
+                        <option value="Деревянные(сосна)">Деревянные(сосна)</option>
+                        <option value="Деревянные(лиственница)">Деревянные(лиственница)</option>
+                        <option value="Деревянные(дуб)">Деревянные(дуб)</option>
+                    </select>
+                </div>
 
                 <div class="col-lg-12">
                     <input type="submit" wz-prev value="Назад" style="float: left"/>
@@ -120,8 +128,66 @@
 
 
         <wz-step title="Continuing">
-            <h1>Continuing</h1>
-            <p>You have continued here!</p>
+            <h1>Иженерные сети и коммуникации</h1>
+            <div class="form-group">
+                Электрическая сеть
+                <select name="electricity" id="electricity" class="form-control">
+                    <option value="Скрытая">Скрытая</option>
+                    <option value="Открытая">Открытая</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                Система отопления
+                <div class="checkbox">
+                    <label>
+                        <input name="heatingGas" type="checkbox">Газ
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="heatingGasgolder" type="checkbox">Газгольдер
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="heatingDiesel" type="checkbox">Дизель
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="heatingSolid" type="checkbox">Твердое торливо(дрова, пеллеты)
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="heatingAlt" type="checkbox">Альтернативные источники
+                    </label>
+                </div>
+                </div>
+
+            <div class="form-group">
+
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
             <div class="col-lg-12">
                 <input type="submit" wz-prev value="Назад" style="float: left"/>
                 <input type="submit" wz-next value="Вперёд" style="float: right"/>
@@ -131,10 +197,11 @@
 
         <wz-step title="More steps">
             <p>Even more steps!!</p>
-            <<div class="col-lg-12">
-            <input type="submit" wz-prev value="Назад" style="float: left"/>
-            <input type="submit" wz-next value="Вперёд" style="float: right"/>
-        </div>
+            <
+            <div class="col-lg-12">
+                <input type="submit" wz-prev value="Назад" style="float: left"/>
+                <input type="submit" wz-next value="Вперёд" style="float: right"/>
+            </div>
         </wz-step>
     </wizard>
 

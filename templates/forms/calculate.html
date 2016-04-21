@@ -65,7 +65,7 @@
                     <div class="radio">
                         <label>
                             <input type="radio" name="isSubstructure" id="" value="0">
-                            Нет
+                            Нужен
                         </label>
                     </div>
                 </div>
@@ -110,12 +110,12 @@
                 <div class="form-group">
                     Окна
                     <select name="windowsType" id="windowsType" class="form-control">
-                        <!--option value="Безрамное остекление">Безрамное остекление</option-->
                         <option value="Пластиковые обычные(белые)">Пластиковые обычные(белые)</option>
                         <option value="Пластиковые ламинированные">Пластиковые ламинированные</option>
                         <option value="Деревянные(сосна)">Деревянные(сосна)</option>
                         <option value="Деревянные(лиственница)">Деревянные(лиственница)</option>
                         <option value="Деревянные(дуб)">Деревянные(дуб)</option>
+                        <option value="Безрамное остекление">Безрамное остекление</option>
                     </select>
                 </div>
 
@@ -127,14 +127,24 @@
         </wz-step>
 
 
-        <wz-step title="Continuing">
+        <wz-step title="Иженерные сети и коммуникации">
             <h1>Иженерные сети и коммуникации</h1>
             <div class="form-group">
                 Электрическая сеть
-                <select name="electricity" id="electricity" class="form-control">
+                <select name="electricWiring" id="electricWiring" class="form-control">
                     <option value="Скрытая">Скрытая</option>
                     <option value="Открытая">Открытая</option>
                 </select>
+                <div class="checkbox">
+                    <label>
+                        <input name="electricReserve" type="checkbox">Резервное питание
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="electricAuto" type="checkbox">Автономная энергосистема
+                    </label>
+                </div>
             </div>
 
             <div class="form-group">
@@ -167,28 +177,65 @@
                 </div>
 
             <div class="form-group">
+                Слаботочные сети
+                <div class="checkbox">
+                    <label>
+                        <input name="lowVoltage" type="checkbox">ТВ
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="lowVoltage" type="checkbox">интернет
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="lowVoltage" type="checkbox">Пожарная система
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="lowVoltage" type="checkbox">Охранная система
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="lowVoltage" type="checkbox">Видеонаблюдение
+                    </label>
+                </div>
+             </div>
 
-                <select name="" id="" class="form-control">
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="lowVoltage" type="checkbox">Комплекс "Умный дом"
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                Канализация
+                <select name="sewage" id="sewage" class="form-control">
+                    <option value="Автономная(септик)">Автономная(септик)</option>
+                    <option value="Центральная">Центральная</option>
                     <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                Водоснабжение
+                <select name="water" id="water" class="form-control">
+                    <option value="Автономное(скважина)">Автономное(скважина)</option>
+                    <option value="Центральное">Центральное</option>
                 </select>
             </div>
             <div class="form-group">
-                <select name="" id="" class="form-control">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
+                <div>
+                    <textarea class="communicationsAdditional" id=""  placeholder="Примечания и пожелания"></textarea>
+                </div>
             </div>
+
             <div class="form-group">
-                <select name="" id="" class="form-control">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-            </div>
-            <div class="col-lg-12">
                 <input type="submit" wz-prev value="Назад" style="float: left"/>
                 <input type="submit" wz-next value="Вперёд" style="float: right"/>
             </div>

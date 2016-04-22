@@ -230,9 +230,9 @@
                 </select>
             </div>
             <div class="form-group">
-                <div>
-                    <textarea  id="communicationsAdditional"  placeholder="Примечания и пожелания"></textarea>
-                </div>
+
+                    <textarea class="form-control" rows="3" id="communicationsAdditional"  placeholder="Примечания и пожелания"></textarea>
+
             </div>
 
             <div class="form-group">
@@ -242,10 +242,111 @@
         </wz-step>
 
 
-        <wz-step title="Наличие проектной документации">
-            <h1>Проверка проектной документации</h1>
+        <wz-step title="Документация">
+            <h1>Необходимые для работы документы</h1>
+            <div class="form-group">
+                Кадастровый паспорт
+                <select name="docKPass" id="docKPass" class="form-control">
+                    <option value="Имеется">Имеется</option>
+                    <option value="Отсутствует">Отсутствует</option>
+                </select>
+            </div>
+            <div class="form-group">
+                Геодезические материалы (топографическая съемка участка)
+                <select name="docGeodTopoShot" id="docGeodTopoShot" class="form-control">
+                    <option value="Готовы">Готовы</option>
+                    <option value="Нужно подготовить">Нужно подготовить</option>
+                    <option value="Подготовим">Подготовим</option>
+                </select>
+            </div>
+            <div class="form-group">
+                Технические условия на подключение к энергосетям
+                <select name="docElectroTechCond" id="docKPass" class="form-control">
+                    <option value="Готовы">Готовы</option>
+                    <option value="Нужно подготовить">Нужно подготовить</option>
+                    <option value="Подготовим">Подготовим</option>
+                </select>
+            </div>
+            <div class="form-group">
+                Геологические изыскания (исследования грунта)
+                <select name="docGeolResearch" id="docGeolResearch" class="form-control">
+                    <option value="Готовы">Готовы</option>
+                    <option value="Нужно подготовить">Нужно подготовить</option>
+                    <option value="Подготовим">Подготовим</option>
+                </select>
+            </div>
+            <div class="form-group">
+                Градостроительный план (перечень внутренних норм для поселков закрытого типа)
+                <select name="docGradostPlan" id="docGradostPlan" class="form-control">
+                    <option value="Имеется">Имеется</option>
+                    <option value="Отсутствует">Отсутствует</option>
+                </select>
+            </div>
+            <div class="form-group">
+                Технический паспорт (документ БТИ, отражающий техническое состояние недостроенного объекта)
+                <select name="docGeolTopoShot" id="docGeolTopoShot" class="form-control">
+                    <option value="Имеется">Имеется</option>
+                    <option value="Отсутствует">Отсутствует</option>
+                </select>
+            </div>
 
 
+
+
+            <h1>Перечень проектных работ(нужное выделить)</h1>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Эскизный проект
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Ландшафтный дизайн
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Дизайн интерьеров
+                    </label>
+                </div>
+                <h1>Разделы рабочего проектирования (нужное выделить):</h1>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Раздел АС (архитектурно-строительный)
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Раздел ВК (водоснабжение-канализация)
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Раздел ОВ (отопление-вентиляция)
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Раздел ЭО (электроснабжение-освещение)
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Раздел автоматика и пожарная сигнализация
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Раздел газо/тепло снабжение, котельная
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="" type="checkbox">Раздел телефонизация, телевидение, компьютерное обеспечение
+                    </label>
+                </div>
+
+            </div>
             <div class="col-lg-12">
                 <input type="submit" wz-prev value="Назад" style="float: left"/>
                 <input type="submit" wz-next value="Вперёд" style="float: right"/>

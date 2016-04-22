@@ -72,7 +72,7 @@
 
                 <div class="form-group col-md-6">
                     Фундамент
-                    <select name="technology" id="technology" class="form-control">
+                    <select name="substructureIs" id="substructureIs" class="form-control">
                         <option value="fachwerk">Подготовлен</option>
                         <option value="classic">Будет готов</option>
                         <option value="classic" selected>Необходимо подготовить</option>
@@ -145,7 +145,7 @@
             <div class="form-group row">
                 <div class="col-md-4">
                     Электроснабжение
-                    <select name="electricProvider" id="electricWiring" class="form-control">
+                    <select name="electricProvider" id="electricProvider" class="form-control">
                         <option value="Центральное">Центральное</option>
                         <option value="Автономное">Автономное</option>
                     </select>
@@ -217,8 +217,6 @@
                 </div>
 <div class="col-md-12">Слаботочные сети</div>
             <div class="form-group col-md-6">
-
-
                 <div class="checkbox">
                     <label>
                         <input name="lowVoltage" type="checkbox">ТВ
@@ -234,8 +232,8 @@
                         <input name="lowVoltage" type="checkbox">Пожарная система
                     </label>
                 </div>
-                </div>
-                <div class="form-group col-md-6">
+            </div>
+            <div class="form-group col-md-6">
                 <div class="checkbox">
                     <label>
                         <input name="lowVoltage" type="checkbox">Охранная система
@@ -246,18 +244,18 @@
                         <input name="lowVoltage" type="checkbox">Видеонаблюдение
                     </label>
                 </div>
+                    <div class="checkbox">
+                        <label>
+                            <input name="lowVoltage" type="checkbox">Комплекс "Умный дом"
+                        </label>
                     </div>
-             </div>
-
-            <div class="form-group">
-                <div class="checkbox">
-                    <label>
-                        <input name="lowVoltage" type="checkbox">Комплекс "Умный дом"
-                    </label>
                 </div>
             </div>
 
-            <div class="form-group">
+
+
+
+            <div class="form-group col-md-6">
                 Канализация
                 <select name="sewage" id="sewage" class="form-control">
                     <option value="Автономная(септик)">Автономная(септик)</option>
@@ -266,18 +264,18 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 Водоснабжение
                 <select name="water" id="water" class="form-control">
                     <option value="Автономное(скважина)">Автономное(скважина)</option>
                     <option value="Центральное">Центральное</option>
                 </select>
             </div>
-            <div class="form-group">
+            <!--<div class="form-group">-->
 
-                    <textarea class="form-control" rows="3" id="communicationsAdditional"  placeholder="Примечания и пожелания"></textarea>
+                    <!--<textarea class="form-control" rows="2" id="communicationsAdditional"  placeholder="Примечания и пожелания"></textarea>-->
 
-            </div>
+            <!--</div>-->
 
             <div class="form-group">
                 <input type="submit" wz-prev value="Назад" style="float: left"/>
@@ -288,14 +286,14 @@
 
         <wz-step title="Документация">
             <h3>Необходимые для работы документы</h3>
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 Кадастровый паспорт
                 <select name="docKPass" id="docKPass" class="form-control">
                     <option value="Имеется">Имеется</option>
                     <option value="Отсутствует">Отсутствует</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 Геодезические материалы (топографическая съемка участка)
                 <select name="docGeodTopoShot" id="docGeodTopoShot" class="form-control">
                     <option value="Готовы">Готовы</option>
@@ -303,15 +301,15 @@
                     <option value="Подготовим">Подготовим</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 Технические условия на подключение к энергосетям
-                <select name="docElectroTechCond" id="docKPass" class="form-control">
+                <select name="docElectroTechCond" id="docElectroTechCond" class="form-control">
                     <option value="Готовы">Готовы</option>
                     <option value="Нужно подготовить">Нужно подготовить</option>
                     <option value="Подготовим">Подготовим</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 Геологические изыскания (исследования грунта)
                 <select name="docGeolResearch" id="docGeolResearch" class="form-control">
                     <option value="Готовы">Готовы</option>
@@ -319,14 +317,14 @@
                     <option value="Подготовим">Подготовим</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 Градостроительный план (перечень внутренних норм для поселков закрытого типа)
                 <select name="docGradostPlan" id="docGradostPlan" class="form-control">
                     <option value="Имеется">Имеется</option>
                     <option value="Отсутствует">Отсутствует</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 Технический паспорт (документ БТИ, отражающий техническое состояние недостроенного объекта)
                 <select name="docGeolTopoShot" id="docGeolTopoShot" class="form-control">
                     <option value="Имеется">Имеется</option>
@@ -336,9 +334,11 @@
 
 
 
+<div class="col-md-12">
+    Перечень проектных работ(нужное выделить)
+</div>
 
-            <h3>Перечень проектных работ(нужное выделить)</h3>
-            <div class="form-group">
+            <div class="form-inline">
                 <div class="checkbox">
                     <label>
                         <input name="" type="checkbox">Эскизный проект
@@ -354,43 +354,54 @@
                         <input name="" type="checkbox">Дизайн интерьеров
                     </label>
                 </div>
-                <h3>Разделы рабочего проектирования (нужное выделить):</h3>
-                <div class="checkbox">
-                    <label>
-                        <input name="" type="checkbox">Раздел АС (архитектурно-строительный)
+            </div>
+
+
+                <div class="col-md-12">
+                    Разделы рабочего проектирования (нужное выделить
                 </div>
-                <div class="checkbox">
-                    <label>
-                        <input name="" type="checkbox">Раздел ВК (водоснабжение-канализация)
-                    </label>
+                <div class="form-group col-md-6">
+                    <div class="checkbox">
+                        <label>
+                            <input name="" type="checkbox">Раздел АС (архитектурно-строительный)
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input name="" type="checkbox">Раздел ВК (водоснабжение-канализация)
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input name="" type="checkbox">Раздел ОВ (отопление-вентиляция)
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input name="" type="checkbox">Раздел ЭО (электроснабжение-освещение)
+                        </label>
+                    </div>
                 </div>
-                <div class="checkbox">
-                    <label>
-                        <input name="" type="checkbox">Раздел ОВ (отопление-вентиляция)
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input name="" type="checkbox">Раздел ЭО (электроснабжение-освещение)
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input name="" type="checkbox">Раздел автоматика и пожарная сигнализация
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input name="" type="checkbox">Раздел газо/тепло снабжение, котельная
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input name="" type="checkbox">Раздел телефонизация, телевидение, компьютерное обеспечение
-                    </label>
+                <div class="col-md-6">
+                    <div class="checkbox">
+                        <label>
+                            <input name="" type="checkbox">Раздел автоматика и пожарная сигнализация
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input name="" type="checkbox">Раздел газо/тепло снабжение, котельная
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input name="" type="checkbox">Раздел телефонизация, телевидение, компьютерное обеспечение
+                        </label>
+                    </div>
                 </div>
 
-            </div>
+
+
             <div class="col-lg-12">
                 <input type="submit" wz-prev value="Назад" style="float: left"/>
                 <input type="submit" wz-next value="Вперёд" style="float: right"/>

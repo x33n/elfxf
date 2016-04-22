@@ -142,9 +142,9 @@
 
         <wz-step title="Иженерные сети и коммуникации">
             <h3>Иженерные сети и коммуникации</h3>
-            <div class="form-group">
+            <div class="form-group row">
                 <div class="col-md-4">
-                    Электроснабжение объекта
+                    Электроснабжение
                     <select name="electricProvider" id="electricWiring" class="form-control">
                         <option value="Центральное">Центральное</option>
                         <option value="Автономное">Автономное</option>
@@ -152,7 +152,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    Тип электрической сети
+                    Тип проводки
                     <select name="electricWiring" id="electricWiring" class="form-control">
                         <option value="Скрытая">Скрытая</option>
                         <option value="Открытая">Открытая</option>
@@ -160,7 +160,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    Вспомогательные системы
+                    Дополнительно
                     <div class="checkbox" style="margin-bottom: 10px; margin-top: 10px;line-height:18px!important;">
                         <label style="font-family:'Roboto',sans-serif;font-size:17px;font-weight:300;color: #000;">
                             <input name="electricReserve" type="checkbox">Резервное питание
@@ -169,44 +169,56 @@
 
                 </div>
 
+
             </div>
+            <div class="row">
+
 
             <div class="form-group">
-                Система отопления
-                <div class="col-md-6">
-                    <div class="checkbox">
-                        <label>
+                <div class="col-md-12">
+                    Система отопления
+                </div>
+                <div class="col-md-4">
+                    <div class="checkbox" style="margin-bottom: 10px; margin-top: 10px;">
+                        <label style="font-family:'Roboto',sans-serif;font-size:17px;font-weight:300;color: #000;">
                             <input name="heatingGas" type="checkbox">Газ
                         </label>
                     </div>
-                    <div class="checkbox">
-                        <label>
+                    <div class="checkbox" style="margin-bottom: 10px; margin-top: 10px;">
+                        <label style="font-family:'Roboto',sans-serif;font-size:17px;font-weight:300;color: #000;">
                             <input name="heatingGasgolder" type="checkbox">Газгольдер
                         </label>
                     </div>
-                    <div class="checkbox">
-                        <label>
+                    <div class="checkbox" style="margin-bottom: 10px; margin-top: 10px;">
+                        <label style="font-family:'Roboto',sans-serif;font-size:17px;font-weight:300;color: #000;">
                             <input name="heatingDiesel" type="checkbox">Дизель
                         </label>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="checkbox">
-                        <label>
+                <div class="col-md-8">
+                    <div class="checkbox" style="margin-bottom: 10px; margin-top: 10px;">
+                        <label style="font-family:'Roboto',sans-serif;font-size:17px;font-weight:300;color: #000;">
                             <input name="heatingSolid" type="checkbox">Твердое торливо(дрова, пеллеты)
                         </label>
                     </div>
-                    <div class="checkbox">
-                        <label>
+                    <div class="checkbox" style="margin-bottom: 10px; margin-top: 10px;">
+                        <label style="font-family:'Roboto',sans-serif;font-size:17px;font-weight:300;color: #000;">
                             <input name="heatingAlt" type="checkbox">Альтернативные источники
                         </label>
                     </div>
-                </div>
+                    <div class="form-group">
+
+                            <input type="text" class="form-control" id="" placeholder="Впишите название" style="height: 30px">
+
+                    </div>
 
                 </div>
 
-            <div class="form-group">
-                Слаботочные сети
+                </div>
+<div class="col-md-12">Слаботочные сети</div>
+            <div class="form-group col-md-6">
+
+
                 <div class="checkbox">
                     <label>
                         <input name="lowVoltage" type="checkbox">ТВ
@@ -222,6 +234,8 @@
                         <input name="lowVoltage" type="checkbox">Пожарная система
                     </label>
                 </div>
+                </div>
+                <div class="form-group col-md-6">
                 <div class="checkbox">
                     <label>
                         <input name="lowVoltage" type="checkbox">Охранная система
@@ -232,6 +246,7 @@
                         <input name="lowVoltage" type="checkbox">Видеонаблюдение
                     </label>
                 </div>
+                    </div>
              </div>
 
             <div class="form-group">
@@ -272,7 +287,7 @@
 
 
         <wz-step title="Документация">
-            <h1>Необходимые для работы документы</h1>
+            <h3>Необходимые для работы документы</h3>
             <div class="form-group">
                 Кадастровый паспорт
                 <select name="docKPass" id="docKPass" class="form-control">
@@ -322,7 +337,7 @@
 
 
 
-            <h1>Перечень проектных работ(нужное выделить)</h1>
+            <h3>Перечень проектных работ(нужное выделить)</h3>
             <div class="form-group">
                 <div class="checkbox">
                     <label>
@@ -339,7 +354,7 @@
                         <input name="" type="checkbox">Дизайн интерьеров
                     </label>
                 </div>
-                <h1>Разделы рабочего проектирования (нужное выделить):</h1>
+                <h3>Разделы рабочего проектирования (нужное выделить):</h3>
                 <div class="checkbox">
                     <label>
                         <input name="" type="checkbox">Раздел АС (архитектурно-строительный)

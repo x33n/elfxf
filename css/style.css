@@ -79,6 +79,15 @@ background-color: rgba(255, 255, 255, 0.6);;
     margin-bottom: 40px;
 }
 
+
+
+
+#calcFormWrap .form-control {
+font-size: 16px;
+}
+
+
+
 #projects .swiper-container {
     width: 100%;
     min-height: 450px;
@@ -404,8 +413,9 @@ background-color: rgba(255, 255, 255, 0.6);;
 }
 
 
-#form-callback h3 {
-    margin-top: 0;
+.ngdialog-content h3 {
+    margin-top: 20px;
+    margin-left: 20px;
     margin-bottom: 30px;
     border-left: 3px solid rgb(130, 181, 65);
     padding-left: 10px;

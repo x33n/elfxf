@@ -159,6 +159,7 @@ angular.module('cloverApp', ['ngDialog', 'mgo-angular-wizard'])
             ngDialog.open({
                 template: '/templates/forms/calculate.html',
                 className: 'ngdialog-theme-default',
+                showClose: false,
                 scope: $scope
             });
 

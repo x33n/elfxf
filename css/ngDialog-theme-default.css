@@ -134,7 +134,7 @@
 .ngdialog.ngdialog-theme-default .ngdialog-content {
   -webkit-animation: ngdialog-flyin .5s;
   animation: ngdialog-flyin .5s;
-  background: #ffffff;
+  background: transparent;
   border-radius: 2px;
   color: #000 font-family: 'Helvetica',sans-serif;
 
